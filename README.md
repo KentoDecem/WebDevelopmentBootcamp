@@ -12,7 +12,8 @@ Is my starting point, the foundational gateway to my web development journey.
 
 ## Section 2: Introduction to HTML
 I learned the basics such as how to use headings, paragraphs, br and hr.
-<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%202/s2.jpg" alt="Best movies" width="300">
+<br>
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%202/s2.jpg" alt="Best movies" width="1000">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
