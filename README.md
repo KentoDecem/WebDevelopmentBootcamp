@@ -15,6 +15,13 @@ I learned the basics such as how to use headings, paragraphs, br and hr.
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%202/s2.jpg" alt="Best movies" width="500">
 
+## Section 3: Intermediate HTML
+I understood how to make lists. I know how nesting and indentation work. Now I also know how to insert photos and links on the website.
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%203/bd.jpg" alt="Birthday Invite" width="500">
+
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
