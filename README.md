@@ -20,6 +20,9 @@ I understood how to make lists. I know how nesting and indentation work. Now I a
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%203/bd.jpg" alt="Birthday Invite" width="500">
 
+## Section 4: Multi-Page Websites
+https://kentodecem.github.io/jedi-resume/
+
 
 
 ## Contributing
