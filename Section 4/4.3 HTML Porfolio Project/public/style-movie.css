@@ -1,0 +1,45 @@
+body {
+    background: #00020e;
+    background-image: linear-gradient(to right top, #00020e, #070018, #150024, #090018, #090029);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+h1 {
+    background: linear-gradient(to right, #f0f, #0ff, #f0f);
+    background-clip: text;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hr {
+    border: 0; /* Usuń domyślną linię */
+    height: 2px; /* Grubość linii */
+    background: linear-gradient(90deg, #8000ff, rgb(225, 0, 255), #9900ff); /* Gradient o kolorach charakterystycznych dla cyberpunku */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 68%;
+    box-shadow: rgb(119, 0, 255) 0px 0px 10px;
+}
+
+h2 {
+    text-shadow: #0ff 0px 0px 10px;
+}
+
+h3 {
+    text-shadow: #f0f 0px 0px 10px;
+}
+
+p {
+    text-shadow: #ff0 0px 0px 10px;
+    padding-bottom: 5%;
+}
