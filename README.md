@@ -29,6 +29,10 @@ I also learned about various CSS Selectors.
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%205/5.4%20Color%20Vocab%20Project/spanish_vocabulary.jpg" alt="Spanish Vocabulary" width="500">
 
+## Section 6: CSS Properties
+I understood the principles of css colors and font properties. I used css inspection in the browser. I delved into the basics of the CSS Box Model.
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%206/6.4%20Motivation%20Meme%20Project/david_goggins_motivational.jpg" alt="David Goggins Quote" width="500">
 
 
 
