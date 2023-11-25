@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width:99%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+#container {
+    width:50%;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: calc(3vw + 24px);
+}
+
+p {
+    font-size: calc(1vw + 14px);
+}
