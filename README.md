@@ -26,6 +26,7 @@ https://kentodecem.github.io/jedi-resume/
 ## Section 5: Introduction to CSS
 Now I know ways to introduce css into an html file. 
 I also learned about various CSS Selectors.
+
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%205/5.4%20Color%20Vocab%20Project/spanish_vocabulary.jpg" alt="Spanish Vocabulary" width="500">
 
 
