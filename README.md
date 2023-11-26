@@ -36,6 +36,14 @@ I understood the principles of css colors and font properties. I used css inspec
 
 
 
+## Section 7: Intermediate CSS
+I delved into concepts like:
+- The Cascade Specificity and Inheritance
+- Combining CSS Selectors
+- CSS Positioning
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%207/7.3%20CSS%20Flag%20Project/The_Flag_Of_Laos.jpg" alt="David Goggins Quote" width="500">
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
