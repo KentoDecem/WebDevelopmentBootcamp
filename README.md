@@ -35,14 +35,22 @@ I understood the principles of css colors and font properties. I used css inspec
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%206/6.4%20Motivation%20Meme%20Project/david_goggins_motivational.jpg" alt="David Goggins Quote" width="500">
 
 
-
 ## Section 7: Intermediate CSS
 I delved into concepts like:
 - The Cascade Specificity and Inheritance
 - Combining CSS Selectors
 - CSS Positioning
 
-<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%207/7.3%20CSS%20Flag%20Project/The_Flag_Of_Laos.jpg" alt="David Goggins Quote" width="500">
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%207/7.3%20CSS%20Flag%20Project/The_Flag_Of_Laos.jpg" alt="Flag Of Laos" width="500">
+
+## Section 8: Advanced CSS
+I understood:
+- CSS Display Property
+- CSS Float
+- Ways of how to Create Responsive Websites
+- and details of Media Queries
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%208/8.4%20Web%20Design%20Agency%20Project/final.jpg" alt="Web Design Agency" width="500">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
