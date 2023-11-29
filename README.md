@@ -54,7 +54,7 @@ I understood:
 
 ## Section 9: Flexbox
 I managed to delve into flexbox.
--Flex Direction
+- Flex Direction
 - Flex Layout
 - Flex Sizing
 
