@@ -50,7 +50,7 @@ I understood:
 - Ways of how to Create Responsive Websites
 - and details of Media Queries
 
-<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%208/8.4%20Web%20Design%20Agency%20Project/final.jpg" alt="Web Design Agency" width="500">
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%208/8.4%20Web%20Design%20Agency%20Project/final.jpg" alt="Final Project" width="500">
 
 ## Section 9: Flexbox
 I managed to delve into flexbox.
@@ -58,7 +58,16 @@ I managed to delve into flexbox.
 - Flex Layout
 - Flex Sizing
 
-<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%209/9.4%20Flexbox%20Pricing%20Table%20Project/buy.jpg" alt="Web Design Agency" width="500">
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%209/9.4%20Flexbox%20Pricing%20Table%20Project/buy.jpg" alt="Final project" width="500">
+
+## Section 10: Grid
+Today I learned how Grid works:
+- Display: Grid
+- Grid Sizing
+- Grid Placement
+And I made the "Mondrian Painting" project!
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2010/10.3%20Mondrian%20Project/Mondrian.jpg" alt="Final project" width="500">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
