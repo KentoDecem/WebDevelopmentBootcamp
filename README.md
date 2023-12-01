@@ -71,6 +71,7 @@ And I made the "Mondrian Painting" project!
 
 ## Section 11: Bootstrap
 I understood the basics of bootstrap, its principles and components. It is a powerful tool.
+
 https://kentodecem.github.io/tindog/
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2011/11.3%20TinDog%20Project/tindog.jpg" alt="Final project" width="500">
 
