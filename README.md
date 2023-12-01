@@ -69,6 +69,12 @@ And I made the "Mondrian Painting" project!
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2010/10.3%20Mondrian%20Project/Mondrian.jpg" alt="Final project" width="500">
 
+## Section 11: Bootstrap
+I understood the basics of bootstrap, its principles and components. It is a powerful tool.
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2011/11.3%20TinDog%20Project/tindog.jpg" alt="Final project" width="500">
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
