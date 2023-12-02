@@ -76,6 +76,14 @@ https://kentodecem.github.io/tindog/
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2011/11.3%20TinDog%20Project/tindog.jpg" alt="Final project" width="500">
 
+## Section 12: Create a Website that People Love
+Today I learned the rules and theory of creating cool designs.
+- Color Theory (emotions of colors)
+- Typography (How to choose good font)
+- User Interface
+- User Experience
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2012/grandharmony.jpg" alt="Final project" width="500">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
