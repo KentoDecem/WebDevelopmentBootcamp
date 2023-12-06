@@ -85,6 +85,15 @@ Today I learned the rules and theory of creating cool designs.
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2012/grandharmony.jpg" alt="Final project" width="500">
 
+## Section 13: Capstone Project 2
+Hey I just finished my portfolio website.
+It was supposed to take me 5 hours but it took a little longer... 😅
+Fortunately, I did it. You can see my website here: https://muslewski.com/
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2013/finish.jpg" alt="Final Portfolio Project" width="500">
+
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
