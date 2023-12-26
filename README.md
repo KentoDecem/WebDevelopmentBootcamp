@@ -93,9 +93,7 @@ Fortunately, I did it. You can see my website here: https://muslewski.com/
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2013/finish.jpg" alt="Final Portfolio Project" width="500">
 
 ## Section 14: Introduction to JavaScript ES6
-I learned the basics of JavaScript - I understood data types and functions.
-
-I managed to make a BMI calculator
+I learned the basics of JavaScript - I understood data types and functions. I managed to make a BMI calculator
 
 
 ## Contributing
