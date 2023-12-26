@@ -94,7 +94,7 @@ Fortunately, I did it. You can see my website here: https://muslewski.com/
 
 ## Section 14: Introduction to JavaScript ES6
 I learned the basics of JavaScript - I understood data types and functions
-
+I managed to make a BMI calculator
 
 
 ## Contributing
