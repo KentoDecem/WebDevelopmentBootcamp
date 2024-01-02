@@ -95,6 +95,9 @@ Fortunately, I did it. You can see my website here: https://muslewski.com/
 ## Section 14: Introduction to JavaScript ES6
 I learned the basics of JavaScript - I understood data types and functions. I managed to make a BMI calculator
 
+## Section 15: Intermediate JavaScript
+I understood how to operate a control statement - If Else. And how for and while loops work.
+
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
