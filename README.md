@@ -98,6 +98,8 @@ I learned the basics of JavaScript - I understood data types and functions. I ma
 ## Section 15: Intermediate JavaScript
 I understood how to operate a control statement - If Else. And how for and while loops work.
 
+## Section 16: The Document Object Model
+Now I know how to add Javascript to a page, I know how the DOM works, I can also select elements, manipulate text and attributes.
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
