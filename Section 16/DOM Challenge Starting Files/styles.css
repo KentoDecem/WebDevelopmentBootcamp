@@ -1,0 +1,18 @@
+
+.blue {
+  background-color: blue;
+}
+
+.huge {
+  font-size: 10rem;
+  color:white;
+  background-color: black;
+  transition: all 0.3s;
+}
+
+.small {
+  font-size: 5rem;
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
