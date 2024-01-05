@@ -101,6 +101,12 @@ I understood how to operate a control statement - If Else. And how for and while
 ## Section 16: The Document Object Model
 Now I know how to add Javascript to a page, I know how the DOM works, I can also select elements, manipulate text and attributes.
 
+## Section 17: Dicee Challenge
+Today I put my javascript skills into practice and created a game that rolls dice.
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2017/dicee.gif" alt="Final Project" width="500">
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
