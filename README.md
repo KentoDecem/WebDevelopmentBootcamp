@@ -106,7 +106,7 @@ Today I put my javascript skills into practice and created a game that rolls dic
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2017/dicee.gif" alt="Final Project" width="500">
 
-## Section 17: Dicee Challenge
+## Section 17: Drum Kit Challenge
 Hey today, I received a large dose of knowledge.
 Advanced Javascript and DOM Manipulation:
 - Adding Event Listener,
