@@ -106,6 +106,18 @@ Today I put my javascript skills into practice and created a game that rolls dic
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2017/dicee.gif" alt="Final Project" width="500">
 
+## Section 17: Dicee Challenge
+Hey today, I received a large dose of knowledge.
+Advanced Javascript and DOM Manipulation:
+- Adding Event Listener,
+- Higher Order Functions,
+- Sounds,
+- JavaScript Objects,
+- Switch Statements,
+- Callbacks.
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2018/drums.gif" alt="Final Project" width="500">
+
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
