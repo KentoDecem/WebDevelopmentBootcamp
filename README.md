@@ -106,7 +106,7 @@ Today I put my javascript skills into practice and created a game that rolls dic
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2017/dicee.gif" alt="Final Project" width="500">
 
-## Section 17: Drum Kit Challenge
+## Section 18: Drum Kit Challenge
 Hey today, I received a large dose of knowledge.
 Advanced Javascript and DOM Manipulation:
 - Adding Event Listener,
@@ -117,6 +117,9 @@ Advanced Javascript and DOM Manipulation:
 - Callbacks.
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2018/drums.gif" alt="Final Project" width="500">
+
+## Section 19: jQuery
+I understood the basics of jQuery and its phenomenon.
 
 
 ## Contributing
