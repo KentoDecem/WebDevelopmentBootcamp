@@ -1,0 +1,255 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  position:relative;
+}
+
+
+
+
+.pressed {
+  box-shadow: 0 0 20px 2px #FEF2BF;
+  background-color: grey;
+  filter: drop-shadow(0 0 10rem #fef2bf1b) drop-shadow(0 0 3rem #fef2bf99);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.unpressed {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, filter 0.3s ease;
+}
+
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+
+}
+
+.leftAnimation { 
+  transition: left 1s ease;
+  animation: moveLeft 1s;
+}
+
+ @keyframes moveLeft {
+      0% {
+        left: 0;
+      }
+
+      100% {
+        left: 271px;
+      }
+}
+
+.topAnimation { 
+  transition: top 1s ease;
+  animation: moveTop 1s;
+}
+
+ @keyframes moveTop {
+      0% {
+        top: 0;
+      }
+
+      100% {
+        top: 271px;
+      }
+}
+
+.rightAnimation { 
+  transition: right 1s ease;
+  animation: moveRight 1s;
+}
+
+ @keyframes moveRight {
+      0% {
+      left: 271px;
+      }
+
+      100% {
+        left: 0;
+      }
+}
+
+.rightAnimationBlue { 
+  transition: right 1s ease;
+  animation: moveRightBlue 1s;
+}
+
+ @keyframes moveRightBlue {
+      0% {
+      right: 0px;
+      }
+
+      100% {
+        right: 271px;
+      }
+}
+
+
+.bottomAnimation { 
+  transition: right 1s ease;
+  animation: moveBottom 1s;
+}
+
+ @keyframes moveBottom {
+      0% {
+      top: 271px;
+      }
+
+      100% {
+        top: 0;
+      }
+}
+
+.bottomAnimationYellow { 
+  transition: right 1s ease;
+  animation: moveBottomYellow 1s;
+}
+
+ @keyframes moveBottomYellow {
+      0% {
+      bottom: 0px;
+      }
+
+      100% {
+        bottom: 271px;
+      }
+}
+
+.bottomAnimationYellow2 { 
+  transition: right 1s ease;
+  animation: moveBottomYellow2 1s;
+}
+
+ @keyframes moveBottomYellow2 {
+      0% {
+      top: 0px;
+      }
+
+      100% {
+        top: -271px;
+      }
+}
+
+
+
+.leftAnimationYellow { 
+  transition: right 1s ease;
+  animation: moveLeftYellow 1s;
+}
+
+ @keyframes moveLeftYellow {
+      0% {
+        left: 0;
+      }
+
+      100% {
+        left: 271px;
+      }
+}
+
+.bottomAnimation3 { 
+  transition: right 1s ease;
+  animation: moveBottom3 1s;
+}
+
+ @keyframes moveBottom3 {
+      0% {
+      top: -271px;
+      }
+
+      100% {
+        top: 0;
+      }
+}
+
+.leftAnimationRed { 
+  transition: left 1s ease;
+  animation: moveLeftRed 1s;
+}
+
+ @keyframes moveLeftRed {
+      0% {
+        right: 271px;
+      }
+
+      100% {
+        right: 0px;
+      }
+}
+
+.bottomAnimationBlue { 
+  transition: right 1s ease;
+  animation: moveBottomBlue 1s;
+}
+
+ @keyframes moveBottomBlue {
+      0% {
+        top:-271px;
+      }
+
+      100% {
+        top:0;
+      }
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.victory {
+  background: linear-gradient(to right, #013f01, #006400);
+  background-size: 200% 100%;
+  background-color: #013f01;
+  transition: background-color 0.25s;
+  animation: gradientShift 0.5s ease-in-out;
+}
+
+.game-over {
+  background: linear-gradient(to right, #3f0101, #640000);
+  background-size: 200% 100%;
+  background-color: #3f0101;
+  transition: background-color 0.25s;
+  animation: gradientShift 0.5s ease-in-out;
+}
+
+.after-victory {
+  background-color: #011F3F;
+  transition: background-color 0.25s;
+}
+
+@keyframes gradientShift {
+  to {
+    background-position: 200% 0;
+  }
+}
