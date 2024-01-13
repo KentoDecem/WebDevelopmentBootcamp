@@ -121,6 +121,11 @@ Advanced Javascript and DOM Manipulation:
 ## Section 19: jQuery
 I understood the basics of jQuery and its phenomenon.
 
+## Section 20: Simon Game Challenge
+I was able to test my jquery skills in practice. I made Simon game, you can play it here: https://kentodecem.github.io/Simon-Game/
+
+<img src="https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2020/simon.gif" alt="Final Project" width="500">
+
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
