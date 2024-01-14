@@ -126,6 +126,8 @@ I was able to test my jquery skills in practice. I made Simon game, you can play
 
 <img src="https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2020/simon.gif" alt="Final Project" width="500">
 
+## Section 21: The Unix Command Line
+I learned what shell and kernel are, and now I also know how to use command line. CLI > GUI
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
