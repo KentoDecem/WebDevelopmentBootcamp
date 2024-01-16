@@ -137,6 +137,7 @@ Now I know what backend is. I understood the basic components such as:
 
 ## Section 23: Node.js
 Today I understood what Node.js is, how to use Node repl. I know how to use native and external modules from npm.
+Finally, I created a program that generates a qr code for the link we selected.
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2023/2.4%20QR%20Code%20Project/qr-code.png" alt="Final Project" width="250">
 
