@@ -137,7 +137,7 @@ Now I know what backend is. I understood the basic components such as:
 
 ## Section 23: Node.js
 Today I understood what Node.js is, how to use Node repl. I know how to use native and external modules from npm.
-<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2023/2.4%20QR%20Code%20Project/qr-code.png" alt="Final Project" width="500">
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2023/2.4%20QR%20Code%20Project/qr-code.png" alt="Final Project" width="300">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
