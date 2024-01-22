@@ -141,6 +141,18 @@ Finally, I created a program that generates a qr code for the link we selected.
 
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2023/2.4%20QR%20Code%20Project/qr-code.png" alt="Final Project" width="250">
 
+
+## Section 24: Express.js
+Hey, today I finished the express.js section. I understood a lot of new concepts.
+among others:
+- Request Vocab (get, post, put, etc.)
+- HTTP Response Status Codes
+- How to make a server with express.js
+- What are middlewares
+And I did the Secret Access Project
+
+<img src=https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2024/secrets.jpg alt="Final Project" width="500">
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
