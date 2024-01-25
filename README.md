@@ -151,7 +151,15 @@ among others:
 - What are middlewares
 And I did the Secret Access Project
 
-<img src=https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2024/secrets.jpg alt="Final Project" width="500">
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2024/secrets.jpg" alt="Final Project" width="500">
+
+## Section 25: Embedded JavaScript
+Today I learned how to dynamically implement JavaScript into html using EJS. 
+I understood the types of EJS tags and what partials are.
+I know how to transfer data between client and server sides.
+Finally, I created a project that generated a random name for a music club.
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2025/4.4%20Band%20Generator%20Project/final-band-name.gif" alt="Final Project" width="500">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
