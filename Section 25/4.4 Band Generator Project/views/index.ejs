@@ -1,0 +1,18 @@
+
+<%- include("partials/header.ejs") %>
+
+<% if (locals.adj && locals.noun) { %>
+    <h1 class="<%= animated ? 'animated' : '' %>"><%= adj %> <%= noun %></h1>
+<% } else { %>
+    <h1>Create your Band Name! 🎸</h1>
+<% } %>
+
+<form action="/submit" method="POST">
+  <% if (locals.amount) { %>
+  <input type="submit" value="Generate Name (<%= amount %>)">
+  <% } else { %>
+  <input type="submit" value="Generate Name">
+  <% } %>
+</form>
+
+<%- include("partials/footer.ejs") %>
