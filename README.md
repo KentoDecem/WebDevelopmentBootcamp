@@ -166,7 +166,7 @@ Over the last few days, I managed to complete the Capstone Project - "Sea Your T
 This is my biggest project so far, you can add, edit and delete entries on the website. 
 The website is, of course, responsive and has potential for future development.
 
-<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/SeaYouThoughts.gif" alt="Final Project" width="500">
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/SeaYouThoughts.gif" alt="Final Project" width="500"><img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/SeaYouThoughts.gif" alt="Final Project" width="500">
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
