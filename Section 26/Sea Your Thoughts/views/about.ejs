@@ -1,0 +1,69 @@
+<%- include("partials/header.ejs") %>
+
+<style>
+body {
+    background-color: rgb(9, 93, 104);
+}
+header {
+    position: static;
+}
+footer {
+    background-color: rgb(9, 93, 104);
+    box-shadow: 
+0px -40px 26px 70px rgb(9, 93, 104), /* pierwszy efekt cienia */
+    inset 0px -82px 22px -27px rgb(9, 93, 104); 
+    color: #ffffff;
+    text-shadow: 4px 4px 10px rgba(175, 255, 252, 0.304);
+}
+</style>
+
+<img src="images/purpose/purpose.png" class="background-img-about">
+
+<div class="topics-box first-information">
+    <h2 class="purpose-topics">What's this for?<img src="images/icons/questions.png"></h2>
+    <h3 class="purpose-text">Writing down your thoughts empowers you to control them, guiding you through life's currents like a captain navigating the sea.</h3>
+    <h3 class="purpose-text"><span>Our mission</span> is to ensure that no storm, however fierce, defeats you. Through writing and reflection, we empower resilience in the face of life's challenges.</h3>
+</div>
+
+<div class="topics-box second-information">
+    <h2 class="purpose-topics">What do you need to do?<img src="images/icons/writing.png"></h2>
+    <h3 class="purpose-text">Simply write whatever comes to mind consistently. Each word contributes to your journey of self-discovery, guiding you through the ebbs and flows of life.</h3>
+    <h3 class="purpose-text">Entry examples:</h3>
+    <ul class="post-list post-examples-box">
+        <li class="post-example first-post-example">
+            <div class="post-box">
+                <div class="tools">
+                    <button class="tools-button trash-button"><img src="images/icons/trash.png" ></button>
+                    <button class="tools-button edit-button"><img src="images/icons/edit.png" class="pencil"></button>
+                </div>
+
+                <b><span class="bold-textbox title-content">Morning Serenity</span></b><br> 
+                <p class="post-content">I began the day in a magical forest of elves, where the rays of the rising sun danced on the branches of trees. In the distance, the song of birds could be heard, and the air was filled with the scent of flowers.</p> 
+            </div>
+        </li>
+        <li class="post-example second-post-example">
+             <div class="post-box">
+                <div class="tools">
+                    <button class="tools-button trash-button"><img src="images/icons/trash.png" ></button>
+                    <button class="tools-button edit-button"><img src="images/icons/edit.png" class="pencil"></button>
+                </div>
+
+                <b><span class="bold-textbox title-content">Lost in Thoughts</span></b><br> 
+                <p class="post-content">Today, I embarked on a journey through a misty realm, where every step led me to mysterious corners of my imagination. Deep in my heart, I felt like I was part of something greater, waiting to be discovered.</p> 
+            </div>
+        </li>
+        <li class="post-example third-post-example">
+            <div class="post-box">
+                <div class="tools">
+                    <button class="tools-button trash-button"><img src="images/icons/trash.png" ></button>
+                    <button class="tools-button edit-button"><img src="images/icons/edit.png" class="pencil"></button>
+                </div>
+
+                <b><span class="bold-textbox title-content">Adrenaline Rush</span></b><br> 
+                <p class="post-content"> I walked the peaks of mountains, where the wind curled around me like a wild warrior. As I approached the edge of the abyss, my heart beat faster, and the adrenaline-fueled leap into the void awakened in me a sense of freedom like never before.</p> 
+            </div>
+        </li>
+    </ul>
+</div>
+
+<%- include("partials/footer.ejs") %>

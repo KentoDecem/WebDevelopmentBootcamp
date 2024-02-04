@@ -1,0 +1,167 @@
+body {
+    background-color: mediumaquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    top:0;
+    position:sticky;
+    z-index: 2;
+    height: 150px;
+    display:flex;
+    font-family: 'Skranji', system-ui;
+    font-size: 2rem;
+    color:white;
+}
+
+
+header ul {
+    height:100%;
+    width:100%;
+    margin: 0;
+    /* padding: 0; */
+    display: flex;
+    gap: 10px 10%;
+    align-items: center;
+    justify-content: end;
+    margin-right:5%;
+    margin-left:5%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+header li a {
+    color: white;
+    text-decoration: none;
+    border-radius:50px;
+    padding:5px 15px;
+    background-color: rgba(0, 0, 0, 0.235);
+    box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.087);
+    transition: background-color, box-shadow 0.3s;
+}
+
+header li a:hover {
+    background-color: rgba(0, 0, 0, 0.377);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.434);
+    transition: background-color, box-shadow 0.3s;
+}
+
+header li a:hover .header-icons {
+    filter: drop-shadow(0 0 0.4rem rgb(255, 255, 255));
+    transition: filter 0.3s;
+}
+
+.purpose .ship-wheel {
+    transform: rotate(0deg);
+    transition: transform 0.4s, filter 0.3s;
+}
+
+.purpose:hover .ship-wheel {
+    transform: rotate(200deg);
+    transition: transform 0.4s, filter 0.3s;
+}
+
+header li:first-child {
+    margin-right: auto;
+}
+
+.header-icons {
+    height:40px;
+    margin-left:12px;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 0.2rem #ffffff);
+    transition: filter 0.3s;
+}
+
+@media(max-width: 1415px) {
+    header {
+        height: 200px;
+        padding-top:30px;
+        padding-bottom:40px;
+        /* background-color: red; */
+        align-items: center;
+    }
+    header ul { 
+        justify-content: center;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-right:5%;
+        margin-left:5%;
+        
+    }
+    header li:first-child {
+    margin-right: 0;
+    margin-left:0;
+    }
+
+    header li:last-child, header li:nth-last-child(3) {
+        text-align: end;
+    }
+
+    header li {
+        flex-basis: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:700px) {
+    header {
+        /* background-color: yellow; */
+        height:250px;
+    }
+
+    header ul {
+        gap: 20px 10%;
+    }
+
+    header li {
+        flex-basis:auto;
+    }
+}
+
+.adjust {
+    transition: width .15s;
+}
+
+footer {
+    z-index: 33;
+    position:relative;
+    background-color: rgb(9, 93, 104);
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    0px -10px 26px 20px rgb(9, 93, 104), /* pierwszy efekt cienia */
+    inset 0px -42px 22px -27px rgba(0, 37, 72, 0.619); 
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    /* font-family: 'Averia Sans Libre', sans-serif; */
+    font-family: 'Merienda', cursive;
+    /* font-family: 'Julee', cursive; */
+    text-shadow: 4px 4px 10px rgba(175, 255, 252, 0.304);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding:20px;
+    font-size:1.4rem;
+    text-shadow: none;
+    filter: drop-shadow(0 0 1rem rgba(0, 82, 189, 0.413));
+    transition: transform ease-in-out 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.3s;
+}

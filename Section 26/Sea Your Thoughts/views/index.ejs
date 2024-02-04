@@ -1,0 +1,78 @@
+<%- include("partials/header.ejs") %>
+
+<img src="images/home/index.png" class="background-img background-img-index">
+<img src="images/home/sun.png" class="background-img background-img-sun"> 
+<img src="images/home/sky.png" class="background-img background-img-sky">
+
+<section class="home">
+    <div class="title">
+        <div class="title-box">
+            <h1>Sea your thoughts.<hr class="white-title-line"></h1>
+            
+        </div>
+    </div>
+</section>
+
+<section class="form">
+    <div class="subheading">
+        <div class="subheading-box">
+            <h2>Write:</h2>
+        </div> 
+        <form action="/submit" method="POST">
+            <div class="post-title-box">
+                <label for="post-title">Title:</label>
+                <input class="post-title adjust" type="text" name="title">
+            </div>
+            <div class="post-body-box">
+                <textarea class="post-input" name="post"></textarea>
+                <input type="submit" value="Submit" class="submit-button">
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="posts">
+    <div class="recent">
+        <div class="subheading-box fresh">
+            <h2>Fresh Reflections:</h2>
+        </div>
+
+        <div class="listOfPosts">
+            <ul class="post-list">
+                <% if (locals.titles && locals.posts && posts.length>=1 && titles.length>=1) { %>
+                
+                    <% for (let i=Math.max(0, posts.length - 6); i<posts.length; i++) { %>
+                        <%# Random background %>
+                        <% let background = `images/home/postBackgrounds/bg${randomNumbersList[i]}.png`  %>
+                        
+                        
+
+                        <li style="background-image: url('<%= background %>')" data-post-id="<%= i %>"> 
+
+                            <div class="post-box">
+                                <div class="tools">
+                                    <button class="tools-button trash-button"><img src="images/icons/trash.png" ></button>
+                                    <button class="tools-button edit-button"><img src="images/icons/edit.png" class="pencil"></button>
+                                </div>
+
+                                <b><span class="bold-textbox title-content"> <%- titles[i] %> </span></b><br> 
+                                <p class="post-content"><%= posts[i] %></p> 
+                            </div>
+                        </li>
+                    <% } %>
+
+                <% } else { %>
+                    <div class="post-list no-posts">
+                        <li>No posts loaded... </li>
+                    </div>
+                    
+                <% } %>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div class="safe-background"></div>
+</section>
+
+<%- include("partials/footer.ejs") %>

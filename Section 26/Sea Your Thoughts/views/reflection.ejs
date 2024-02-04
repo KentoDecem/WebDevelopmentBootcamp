@@ -1,0 +1,64 @@
+<section id="deepDives-body">
+<%- include("partials/header.ejs") %>
+
+<style>
+body {
+    background-color: rgb(9, 47, 104);
+}
+header {
+    position: static;
+}
+footer {
+    background-color: rgb(9, 47, 104);
+    box-shadow: 
+    0px -10px 26px 20px rgb(9, 47, 104), /* pierwszy efekt cienia */
+    inset 0px -42px 22px -27px rgba(0, 37, 72, 0.619); 
+    color: #ffffff;
+    text-shadow: 4px 4px 10px rgba(175, 255, 252, 0.304);
+}
+</style>
+
+
+
+<img src="images/deepDives/deepDives.png" class="background-img-reflection">
+
+<embed src="waves.mp3" loop="true" autostart="true" width="2" height="0">
+
+
+<section class="quote">
+    <div class="title-reflection">
+        <h1 class="h1-reflection"><%- quote %></h1>
+        <h2 class="h2-reflection">― <%= author %></h2>
+    </div>
+</section>
+
+<div class="background-stars">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
+    
+<section class="feelings">
+    <div class="feelings-range">
+        <div class="feelings-box happiness">
+            <h3><span>Happiness</span> 😊</h3>
+            <input type="range" class="vol" name="vol" min="0" max="100">
+        </div>
+        <div class="feelings-box empowerment">
+            <h3><span>Empowerment</span> 💪</h3>
+            <input type="range" class="vol" name="vol" min="0" max="100">
+        </div>
+        <div class="feelings-box reflective">
+            <h3><span>Reflective</span> 🤔</h3>
+            <input type="range" class="vol" name="vol" min="0" max="100">
+        </div>
+    </div>
+
+    <div class="feelings-write">
+        <h2>Today Try Think About:</h2>
+        <h3><%= idea %></h3>
+    </div>
+</section>
+
+<%- include("partials/footer.ejs") %>
+</section>

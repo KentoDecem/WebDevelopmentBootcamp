@@ -1,0 +1,76 @@
+<%- include("partials/header.ejs") %>
+
+<style>
+body {
+    background-color: rgb(53, 39, 19);
+}
+header {
+    position: static;
+}
+footer {
+    background-color: rgb(53, 39, 19);
+    box-shadow: 
+    0px -10px 26px 20px rgb(53, 39, 19), /* pierwszy efekt cienia */
+    inset 0px -42px 22px -27px rgb(53, 39, 19); 
+    color: #ffffff;
+    text-shadow: 4px 4px 10px rgba(175, 255, 252, 0.304);
+}
+
+.post-list > * {
+    box-shadow: 0px 5px 33px -8px rgba(255, 255, 255, 0.5);
+}
+</style>
+
+
+
+<div class="container-logbook">
+<div class="ship-img">
+    <img src="images/logbook/logbook.png" class="background-img-collection">
+</div>
+
+<h1 class="logbook-heading">Explore your Logbook, a treasury of thoughts, musings, and reflections...</h1>
+
+<section class="logbook-posts">
+
+        <div class="listOfPosts">
+            <ul class="post-list">
+                <% if (locals.titles && locals.posts && posts.length>=1 && titles.length>=1) { %>
+                
+                    <% for (let i=0; i<posts.length; i++) { %>
+                        <%# Random background %>
+                        <% let background = `images/home/postBackgrounds/bg${randomNumbersList[i]}.png`  %>
+                        
+                        
+
+                        <li style="background-image: url('<%= background %>')" data-post-id="<%= i %>"> 
+
+                            <div class="post-box">
+                                <div class="tools">
+                                    <button class="tools-button trash-button"><img src="images/icons/trash.png" ></button>
+                                    <button class="tools-button edit-button"><img src="images/icons/edit.png" class="pencil"></button>
+                                </div>
+
+                                <b><span class="bold-textbox title-content"> <%- titles[i] %> </span></b><br> 
+                                <p class="post-content"><%= posts[i] %></p> 
+                            </div>
+                        </li>
+                    <% } %>
+
+                <% } else { %>
+                    <div class="post-list no-posts">
+                        <li>No posts loaded... </li>
+                    </div>
+                    
+                <% } %>
+            </ul>
+        </div>
+</section>
+
+<section class="journal-box">
+    <img src="images/logbook/journal.png" id="journal">
+</section>
+
+
+
+<%- include("partials/footer.ejs") %>
+</div>

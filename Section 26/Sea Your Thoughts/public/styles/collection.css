@@ -1,0 +1,85 @@
+.background-img-collection {
+    filter:blur(5px);
+    position:absolute;
+    top:0;
+    z-index: -1;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    user-select: none;
+    background-color: rgb(53, 39, 19);
+    /* border: black solid;
+    border-radius: -50px;
+    border-width: 0 0 30px 0; */
+}
+
+.container-logbook {
+    z-index: -1;
+    padding-top:150px;
+    top:0;
+    width:100%;
+    position:absolute;
+    overflow: hidden;
+    height:auto;
+    background-color: rgb(53, 39, 19);
+    @media(max-width: 1415px) {
+        padding-top: 200px;
+    }
+    @media (max-width:700px) {
+        padding-top: 250px;
+    }
+    @media (max-width:540px) {
+        padding-top: 300px;
+    }
+}
+
+.ship-img {
+    top:0;
+    position: absolute;
+    background-color: rgb(53, 39, 19);
+    width:100%;
+    height: 1000px;
+    z-index: -2;
+}
+
+
+.logbook-heading {
+    color:rgb(244, 251, 255);
+    text-align: center;
+    font-size: 3rem;
+    /* font-family: 'Averia Sans Libre', sans-serif; */
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Julee', cursive;
+    text-shadow: black 3px 3px 15px;
+    margin: 50px 30px 30px 30px;
+}
+
+.logbook-posts {
+    z-index: 33;
+    position:relative;
+    height:auto;
+    overflow: hidden;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    /* filter: drop-shadow(0 -3rem 10px rgb(0, 82, 189)); */
+    height:auto;
+}
+
+.journal-box {
+    position:relative;
+    /* background-color: purple; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+#journal {
+    width:100%;
+    max-width: 700px;
+    /* background-color: red; */
+    filter: drop-shadow(0px -100px 100px #ffffff) drop-shadow(0px -75px 25px #f6ffc697) drop-shadow(0px -50px 50px #f6ffc6);
+}
