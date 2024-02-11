@@ -169,12 +169,22 @@ The website is, of course, responsive and has potential for future development.
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/home.gif" alt="Final Project" width="500"> <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/deepDives.gif" alt="Final Project" width="500">
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/logbook.gif" alt="Final Project" width="500"> <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2026/purpose.gif" alt="Final Project" width="500">
 
-## Git, Github and Version Control
+## Section 27: Git, Github and Version Control
 I understood the basics of git.
 - Gitignore
 - Cloning
 - Branching and Merging
 - Forking and Pull Requests
+
+
+## Section 28:  I explore the mystery of the API
+- Structuring API requests
+- Understanding what the JSON format is
+- Using Axios
+- Types of API authentication
+
+<img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2028/secrets.gif" alt="Final Project" width="500">
+
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
