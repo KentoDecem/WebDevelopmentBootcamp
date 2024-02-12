@@ -186,6 +186,13 @@ I understood the basics of git.
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2028/secrets.gif" alt="Final Project" width="500">
 
 
+## Section 98: Capstone Project (Using APIs) - Commit&Tweet
+Hello Friends
+Today I'm testing two api's:
+- Twitter
+- Github
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
