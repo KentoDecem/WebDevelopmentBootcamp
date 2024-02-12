@@ -186,11 +186,6 @@ I understood the basics of git.
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2028/secrets.gif" alt="Final Project" width="500">
 
 
-## Section 98: Capstone Project (Using APIs) - Commit&Tweet
-Hello Friends
-Today I'm testing two api's:
-- Twitter
-- Github
 
 
 ## Contributing
