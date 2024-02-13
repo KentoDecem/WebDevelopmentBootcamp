@@ -37,6 +37,8 @@ const port = 3000
   //https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif
   let githubImagesLink = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${mainType}%20${mainNumber}/`
   let downloadedImagesFolderPath = "./Downloaded/"
+
+  let presentationLinksList = []
 //?
 
 
@@ -101,7 +103,9 @@ async function downloadPresentationImages() {
     
     //Check how many files with presentation.*
     if (potentialFile.includes('presentation')) {
-      console.log(potentialFile)
+      // Add links for future development (README.md also with this images)
+      presentationLinksList.push(githubImagesLink + potentialFile)
+      
       // Download our target
       try {
         let responseTarget = await axios.get(githubImagesLink + potentialFile, {responseType: 'arraybuffer'})
@@ -116,7 +120,7 @@ async function downloadPresentationImages() {
 
   
   // Download images from github repository --> So that we can use it in our twitter post.
-
+  console.log(presentationLinksList)
   }
 
 async function updatingReadme() {
@@ -182,6 +186,7 @@ async function updatingReadme() {
 app.get("/", async (req,res) => {
 
   downloadPresentationImages()
+
 
   // creatingTwitterPost()
   // updatingReadme()
