@@ -9,7 +9,9 @@ const app = express()
 const port = 3000
 
 //TODO: Lista
-// 1. Dodaj możliwość dodawania img do readme.
+//// 1. Dodaj możliwość dodawania img do readme.
+// 1.1 Dodawaj pobrane zdjęcia do posta na twitterze
+// 1.5 Dodaj kolory do konsoli z informacjami co zostało dodane do readme i co zostało dodane do twittera
 // 2. Pomyśl na możliwością aktualizowania banera albo bio na twitterze = "Currently working on Section 29 of WebDev"
 // 3n. Podstrona wyświetlająca wszystkie dotychczasowe notatki
 
@@ -99,11 +101,10 @@ async function downloadPresentationImages() {
   // Iterate every file
   for (let i=0; i<response.data.length; i++) {
     let potentialFile = response.data[i].name
-    let potentialFileFormat = potentialFile.substring(potentialFile.lastIndexOf("."))
     
     //Check how many files with presentation.*
     if (potentialFile.includes('presentation')) {
-      // Add links for future development (README.md also with this images)
+      // Add links for future development (README.md also with this images and gifs)
       presentationLinksList.push(githubImagesLink + potentialFile)
       
       // Download our target
@@ -118,10 +119,7 @@ async function downloadPresentationImages() {
     
   }
 
-  
-  // Download images from github repository --> So that we can use it in our twitter post.
-  console.log(presentationLinksList)
-  }
+}
 
 async function updatingReadme() {
   
@@ -143,11 +141,19 @@ async function updatingReadme() {
 
   // New text to add before section "Contributing"
   var mainTextGithub = `## ${mainType} ${mainNumber}: ${mainTitle}\n${mainText}`;
-  //! if file presentation.* in folder mainType mainNumber then add <img src="/presentation.*" alt="Presentation of Final Projecy" width="500">
+
+  // if files '*presentation*.*' then add them to mainTextGithub
+  if (presentationLinksList.length > 0) {
+    let presentationLinksHTML = ""
+    presentationLinksList.forEach((element, index) => {
+      presentationLinksHTML += `<img src='${element}' alt='${index+1}. Presentation of Final Project' width="500">\n`
+    })
+    mainTextGithub += `\n${presentationLinksHTML}`;
+  }
+  console.log(mainTextGithub)
 
   var contributingIndex = decodedString.indexOf("## Contributing");
 
-  console.log(contributingIndex)
 
   // Check if section was found
   if (contributingIndex !== -1) {
@@ -185,11 +191,10 @@ async function updatingReadme() {
 
 app.get("/", async (req,res) => {
 
-  downloadPresentationImages()
-
-
+  await downloadPresentationImages()
+  updatingReadme()
   // creatingTwitterPost()
-  // updatingReadme()
+
   res.send("Hello")
 })
 
