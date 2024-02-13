@@ -60,17 +60,28 @@ const twitterClient = new TwitterApi({
 
 //* Twitter Area
 async function creatingTwitterPost() {
-  // Download image from github repository --> So that we can use it in our twitter post.
+
+  // Remove folder Downloaded so that it will become brand new again...
+  fs.rmSync("./Downloaded", { recursive: true, force: true });
+
+  // Download images from github repository --> So that we can use it in our twitter post.
   try {
     // Getting gif from Github
     let response = await axios.get(githubImageLink + "gif", {
       responseType: 'arraybuffer'
     })
-
     fs.writeFileSync(imageFilePath + "gif", Buffer.from(response.data))
 
   } catch (error) {
-    console.log(error)
+    // Getting image from Github if gif Not Found
+    try {
+      let response = await axios.get(githubImageLink + "png", {
+        responseType: 'arraybuffer'
+      })
+      fs.writeFileSync(imageFilePath + "png", Buffer.from(response.data))
+    } catch(error) {
+      console.log(error.message)
+    }
   }
 
   // Post image to twitter
