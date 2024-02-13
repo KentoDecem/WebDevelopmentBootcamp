@@ -1,5 +1,6 @@
 import express from "express" // Server
 import 'dotenv/config' // Environmental Variables
+import fs from "fs" // Saving images on server
 import axios from "axios"
 import { TwitterApi } from "twitter-api-v2" // Twitter
 import { Octokit } from "octokit"; // Github
@@ -36,8 +37,9 @@ const port = 3000
 
 
 //? 🐤 Twitter Inputs:
-  //https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2020/simon.gif
-  let GithubImageFile = `https://github.com/${OWNER}/${REPO}/blob/main/${mainType}%20${mainNumber}/presentation.`
+  //https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif
+  let githubImageLink = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${mainType}%20${mainNumber}/presentation.`
+  let imageFilePath = "./Downloaded/presentation."
 
 
   let mainTags = ["100DaysOfCode"]
@@ -60,9 +62,12 @@ const twitterClient = new TwitterApi({
 async function creatingTwitterPost() {
   // Download image from github repository --> So that we can use it in our twitter post.
   try {
-    response = await axios.get(GithubImageFile + "gif", {
+    // Getting gif from Github
+    let response = await axios.get(githubImageLink + "gif", {
       responseType: 'blob'
     })
+
+    fs.writeFileSync(imageFilePath + "gif", Buffer.from(response.data))
 
   } catch (error) {
     console.log(error)
