@@ -1,7 +1,7 @@
 import express from "express" // Server
 import 'dotenv/config' // Environmental Variables
 import fs from "fs" // Saving images on server
-import axios from "axios"
+import axios from "axios" // Downloading Images from internet: (raw.githubusercontent.com)
 import { TwitterApi } from "twitter-api-v2" // Twitter
 import { Octokit } from "octokit"; // Github
 import chalk from "chalk" // Color in terminal
@@ -9,12 +9,15 @@ import chalk from "chalk" // Color in terminal
 const app = express()
 const port = 3000
 
-//TODO: Lista
-//// 1. Dodaj możliwość dodawania img do readme.
-// 1.1 Dodawaj pobrane zdjęcia do posta na twitterze
-// 1.5 Dodaj kolory do konsoli z informacjami co zostało dodane do readme i co zostało dodane do twittera
+//TODO: Future
 // 2. Pomyśl na możliwością aktualizowania banera albo bio na twitterze = "Currently working on Section 29 of WebDev"
 // 3n. Podstrona wyświetlająca wszystkie dotychczasowe notatki
+
+//TODO: Lista
+//// 1. Dodaj możliwość dodawania img do readme.
+//// 1.1 Dodawaj pobrane zdjęcia do posta na twitterze
+//// 1.5 Dodaj kolory do konsoli z informacjami co zostało dodane do readme i co zostało dodane do twittera
+// Client Side
 
 
 //! Main Inputs:
@@ -83,7 +86,7 @@ async function creatingTwitterPost() {
 
   //Twitter Text Content
   let mainTextTwitter = `${mainTitle}\n` + mainText + `\n\n#${mainType}${mainNumber} ${mainTagsOutput}`
-  console.log(chalk.cyan(chalk.bold.underline("Twitter:\n") + mainTextTwitter + "\n" + selectedImages))
+  console.log(chalk.cyan(chalk.bold.underline("Twitter:\n") + mainTextTwitter + "\n" + selectedImages + "\n"))
 
   //* Creating Tweet
   await twitterClient.v2.tweet({
@@ -205,9 +208,9 @@ async function updatingReadme() {
 
 app.get("/", async (req,res) => {
 
-  await downloadPresentationImages()
-  updatingReadme()
-  creatingTwitterPost()
+  // await downloadPresentationImages()
+  // updatingReadme()
+  // creatingTwitterPost()
 
   res.send("Hello")
 })
