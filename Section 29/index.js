@@ -38,8 +38,8 @@ const port = 3000
 
 //? 🐤 Twitter Inputs:
   //https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif
-  let githubImageLink = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${mainType}%20${mainNumber}/presentation.`
-  let imageFilePath = "./Downloaded/presentation."
+  let githubImageLink = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${mainType}%20${mainNumber}/presentation`
+  let imageFilePath = "./Downloaded/presentation"
 
 
   let mainTags = ["100DaysOfCode"]
@@ -58,31 +58,21 @@ const twitterClient = new TwitterApi({
   accessSecret: process.env.ACCESS_SECRET,
 });
 
-//* Twitter Area
+//* Twitter Areag
 async function creatingTwitterPost() {
 
-  // Remove folder Downloaded so that it will become brand new again...
+  // Removing and Creating folder Downloaded so that it will become brand new again...
   fs.rmSync("./Downloaded", { recursive: true, force: true });
+  fs.mkdirSync("./Downloaded");
 
   // Download images from github repository --> So that we can use it in our twitter post.
-  try {
     // Getting gif from Github
-    let response = await axios.get(githubImageLink + "gif", {
-      responseType: 'arraybuffer'
-    })
-    fs.writeFileSync(imageFilePath + "gif", Buffer.from(response.data))
+    let responseGif = await axios.get(githubImageLink + ".gif", {responseType: 'arraybuffer'})
+    fs.writeFileSync(imageFilePath + ".gif", Buffer.from(responseGif.data))
 
-  } catch (error) {
-    // Getting image from Github if gif Not Found
-    try {
-      let response = await axios.get(githubImageLink + "png", {
-        responseType: 'arraybuffer'
-      })
-      fs.writeFileSync(imageFilePath + "png", Buffer.from(response.data))
-    } catch(error) {
-      console.log(error.message)
-    }
-  }
+    // Getting image from Github
+    let responseImage = await axios.get(githubImageLink + ".png", {responseType: 'arraybuffer'})
+    fs.writeFileSync(imageFilePath + ".png", Buffer.from(responseImage.data))
 
   // Post image to twitter
   const mediaIds = await Promise.all([
