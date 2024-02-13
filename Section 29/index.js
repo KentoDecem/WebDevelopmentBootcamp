@@ -64,9 +64,10 @@ const twitterClient = new TwitterApi({
 
 //* Twitter Area
 async function creatingTwitterPost() {
-  // Post image to twitter
+  // Post images to twitter
   const mediaIds = await Promise.all([
-  twitterClient.v1.uploadMedia('./Commit&Tweet.png'),
+  twitterClient.v1.uploadMedia('./presentation.gif'),
+  twitterClient.v1.uploadMedia('./presentation.png'),
   ]);
 
   //Twitter Text Content
@@ -150,6 +151,8 @@ async function updatingReadme() {
     })
     mainTextGithub += `\n${presentationLinksHTML}`;
   }
+
+  //? Console Info about New Log in Readme
   console.log(mainTextGithub)
 
   var contributingIndex = decodedString.indexOf("## Contributing");
@@ -192,7 +195,7 @@ async function updatingReadme() {
 app.get("/", async (req,res) => {
 
   await downloadPresentationImages()
-  updatingReadme()
+  // updatingReadme()
   // creatingTwitterPost()
 
   res.send("Hello")
