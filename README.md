@@ -186,6 +186,7 @@ I understood the basics of git.
 <img src="https://github.com/KentoDecem/WebDevelopmentBootcamp/blob/main/Section%2028/secrets.gif" alt="Final Project" width="500">
 
 
+<img src="https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.png" alt="Final Project" width="500">
 
 
 ## Contributing
