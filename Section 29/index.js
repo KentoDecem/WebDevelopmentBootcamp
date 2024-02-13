@@ -33,14 +33,14 @@ const port = 3000
 
   const OWNER_NAME = "Kento Decem"
   const OWNER_MAIL = "10kento10@gmail.com"
+
+  //https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif
+  let githubImagesLink = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${mainType}%20${mainNumber}/`
+  let downloadedImagesFolderPath = "./Downloaded/"
 //?
 
 
 //? 🐤 Twitter Inputs:
-  //https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif
-  let githubImageLink = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${mainType}%20${mainNumber}/presentation`
-  let imageFilePath = "./Downloaded/presentation"
-
 
   let mainTags = ["100DaysOfCode"]
   let mainTagsOutput = ''
@@ -58,22 +58,8 @@ const twitterClient = new TwitterApi({
   accessSecret: process.env.ACCESS_SECRET,
 });
 
-//* Twitter Areag
+//* Twitter Area
 async function creatingTwitterPost() {
-
-  // Removing and Creating folder Downloaded so that it will become brand new again...
-  fs.rmSync("./Downloaded", { recursive: true, force: true });
-  fs.mkdirSync("./Downloaded");
-
-  // Download images from github repository --> So that we can use it in our twitter post.
-    // Getting gif from Github
-    let responseGif = await axios.get(githubImageLink + ".gif", {responseType: 'arraybuffer'})
-    fs.writeFileSync(imageFilePath + ".gif", Buffer.from(responseGif.data))
-
-    // Getting image from Github
-    let responseImage = await axios.get(githubImageLink + ".png", {responseType: 'arraybuffer'})
-    fs.writeFileSync(imageFilePath + ".png", Buffer.from(responseImage.data))
-
   // Post image to twitter
   const mediaIds = await Promise.all([
   twitterClient.v1.uploadMedia('./Commit&Tweet.png'),
@@ -83,10 +69,10 @@ async function creatingTwitterPost() {
   let mainTextTwitter = `${mainTitle}\n` + mainText + `\n\n#${mainType}${mainNumber} ${mainTagsOutput}`
 
   //* Creating Tweet
-  // await twitterClient.v2.tweet({
-  //   text: mainTextTwitter,
-  //   media: {media_ids: mediaIds}
-  // });
+  await twitterClient.v2.tweet({
+    text: mainTextTwitter,
+    media: {media_ids: mediaIds}
+  });
 }
 
 
@@ -96,6 +82,43 @@ const octokit = new Octokit({
 });
 
 //* Github Area
+async function downloadPresentationImages() {
+  // Removing and Creating folder Downloaded so that it will become brand new again...
+  fs.rmSync(downloadedImagesFolderPath, { recursive: true, force: true });
+  fs.mkdirSync(downloadedImagesFolderPath);
+
+  // Getting info about repo
+  const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+    owner: OWNER,
+    repo: REPO,
+    path: `${mainType} ${mainNumber}`,
+  });
+
+  // Iterate every file
+  for (let i=0; i<response.data.length; i++) {
+    let potentialFile = response.data[i].name
+    let potentialFileFormat = potentialFile.substring(potentialFile.lastIndexOf("."))
+    
+    //Check how many files with presentation.*
+    if (potentialFile.includes('presentation')) {
+      console.log(potentialFile)
+      // Download our target
+      try {
+        let responseTarget = await axios.get(githubImagesLink + potentialFile, {responseType: 'arraybuffer'})
+        fs.writeFileSync(downloadedImagesFolderPath + potentialFile, Buffer.from(responseTarget.data))
+      } 
+      catch(error) {
+        console.log(error.message)
+      }
+    }
+    
+  }
+
+  
+  // Download images from github repository --> So that we can use it in our twitter post.
+
+  }
+
 async function updatingReadme() {
   
   //* Download info about README.md
@@ -157,7 +180,10 @@ async function updatingReadme() {
 
 
 app.get("/", async (req,res) => {
-  creatingTwitterPost()
+
+  downloadPresentationImages()
+
+  // creatingTwitterPost()
   // updatingReadme()
   res.send("Hello")
 })
