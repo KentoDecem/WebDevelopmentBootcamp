@@ -64,7 +64,7 @@ async function creatingTwitterPost() {
   try {
     // Getting gif from Github
     let response = await axios.get(githubImageLink + "gif", {
-      responseType: 'blob'
+      responseType: 'arraybuffer'
     })
 
     fs.writeFileSync(imageFilePath + "gif", Buffer.from(response.data))
