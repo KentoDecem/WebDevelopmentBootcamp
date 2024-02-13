@@ -4,6 +4,7 @@ import fs from "fs" // Saving images on server
 import axios from "axios"
 import { TwitterApi } from "twitter-api-v2" // Twitter
 import { Octokit } from "octokit"; // Github
+import chalk from "chalk" // Color in terminal
 
 const app = express()
 const port = 3000
@@ -51,6 +52,8 @@ const port = 3000
   for (let i=0; i<mainTags.length; i++) {
     mainTagsOutput += `#${mainTags[i]} `
   }
+
+  let selectedImages = []
 //?
 
 
@@ -64,14 +67,23 @@ const twitterClient = new TwitterApi({
 
 //* Twitter Area
 async function creatingTwitterPost() {
-  // Post images to twitter
-  const mediaIds = await Promise.all([
-  twitterClient.v1.uploadMedia('./presentation.gif'),
-  twitterClient.v1.uploadMedia('./presentation.png'),
-  ]);
+  // Get names of all files in /Downloaded/ folder
+  const downloadedPathsList = fs.readdirSync(downloadedImagesFolderPath).map(file => `./Downloaded/${file}`);
+
+  //? filter only selected images with splice()
+  selectedImages = downloadedPathsList
+
+  // Upload images to twitter
+  const mediaPromises = selectedImages.map(element => {
+    return twitterClient.v1.uploadMedia(`${element}`);
+  });
+  const mediaIds = await Promise.all(mediaPromises);
+
+
 
   //Twitter Text Content
   let mainTextTwitter = `${mainTitle}\n` + mainText + `\n\n#${mainType}${mainNumber} ${mainTagsOutput}`
+  console.log(chalk.cyan(chalk.bold.underline("Twitter:\n") + mainTextTwitter + "\n" + selectedImages))
 
   //* Creating Tweet
   await twitterClient.v2.tweet({
@@ -152,8 +164,7 @@ async function updatingReadme() {
     mainTextGithub += `\n${presentationLinksHTML}`;
   }
 
-  //? Console Info about New Log in Readme
-  console.log(mainTextGithub)
+  console.log(chalk.blue(chalk.bold.underline("\nGithub:\n") + mainTextGithub))
 
   var contributingIndex = decodedString.indexOf("## Contributing");
 
@@ -195,8 +206,8 @@ async function updatingReadme() {
 app.get("/", async (req,res) => {
 
   await downloadPresentationImages()
-  // updatingReadme()
-  // creatingTwitterPost()
+  updatingReadme()
+  creatingTwitterPost()
 
   res.send("Hello")
 })
