@@ -8,7 +8,7 @@ This repository is my gateway to becoming a Full-Stack Web Developer with the po
 I rise to the challenge and embark on an exciting coding adventure filled with practical challenges. In this journey, I create captivating websites, tackle intriguing projects, and unleash my creativity in web development.
 
 ## Section 1: Intro / Basics
-Is my starting point, the foundational gateway to my *web* development journey.
+Is my starting point, the foundational gateway to my web development journey.
 
 ## Section 2: Introduction to HTML
 I learned the basics such as how to use headings, paragraphs, br and hr.
