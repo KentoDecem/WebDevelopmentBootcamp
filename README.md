@@ -196,10 +196,6 @@ Hello Friends
 <img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.png' alt='2. Presentation of Final Project' width="500">
 
 
-Hey, today I finished the express.js section.<div>&nbsp;I understood a lot of new concepts, among others:&nbsp;</div><div><b>- Request methods:&nbsp;</b>I nailed the understanding of GET, POST, PUT, and other verb types used in web communication.&nbsp;</div><div><b>- HTTP responses:&nbsp;</b>I’m now fluent in the language of status codes, interpreting messages like "200 OK" or "404 Not Found".&nbsp;</div><div><b>- Built an Express server:&nbsp;</b>I’ve successfully constructed 
-the backbone of a web application using this popular framework.&nbsp;</div><div><b>- Unleashed middleware:&nbsp;</b>You grasp the power of these tools for intercepting and manipulating requests and responses.</div><div><b>- Secret Access Project:&nbsp;</b>You tackled a project applying your newfound knowledge, likely building something secure and exciting.</div>
-
-
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
