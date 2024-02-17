@@ -196,13 +196,6 @@ Hello Friends
 <img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.png' alt='2. Presentation of Final Project' width="500">
 
 
-Hey so today I have much progress.<div>- the first thing is that i runned!</div><div>- Second is that i clean my <i>desk</i></div><div><b style=""><i>I dont</i>&nbsp;know 
-what i am typing</b></div>
-
-Hey so today I have much progress.<br><li>- the first thing is that i runned!</li><br>- Second is that i clean my <i>desk</i><br><b style=""><i>I dont</i> know what i am typing</b>
-
-Hej dzisiaj udało mi sie:<br><li><b> wstałem rano: </b>tak wiem dla mnie to wyczyn</li><br><li>medytowałem: było to ciekawe</li><br><li><b> biegalem</b></li>
-
 Hej dzisiaj udało mi się:<li><b>wstałęm rano: </b>wiem dla mnie to wyczyn<li><b>biegałem</b>: 28km<li>cos tam jescze robiłem - np programowałem</li>
 
 
