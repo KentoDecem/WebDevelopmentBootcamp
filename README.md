@@ -201,6 +201,9 @@ what i am typing</b></div>
 
 Hey so today I have much progress.<br><li>- the first thing is that i runned!</li><br>- Second is that i clean my <i>desk</i><br><b style=""><i>I dont</i> know what i am typing</b>
 
+Hej dzisiaj udało mi sie:<br><li><b> wstałem rano: </b>tak wiem dla mnie to wyczyn</li><br><li>medytowałem: było to ciekawe</li><br><li><b> biegalem</b></li>
+
+
 
 
 ## Contributing
