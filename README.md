@@ -203,6 +203,7 @@ Hey so today I have much progress.<br><li>- the first thing is that i runned!</l
 
 Hej dzisiaj udało mi sie:<br><li><b> wstałem rano: </b>tak wiem dla mnie to wyczyn</li><br><li>medytowałem: było to ciekawe</li><br><li><b> biegalem</b></li>
 
+Hej dzisiaj udało mi się:<li><b>wstałęm rano: </b>wiem dla mnie to wyczyn<li><b>biegałem</b>: 28km<li>cos tam jescze robiłem - np programowałem</li>
 
 
 
