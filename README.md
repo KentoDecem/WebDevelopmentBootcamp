@@ -199,7 +199,7 @@ Hello Friends
 Hey so today I have much progress.<div>- the first thing is that i runned!</div><div>- Second is that i clean my <i>desk</i></div><div><b style=""><i>I dont</i>&nbsp;know 
 what i am typing</b></div>
 
-Hey so today I have much progress.<br>- the first thing is that i runned!<br>- Second is that i clean my <i>desk</i><br><b style=""><i>I dont</i> know what i am typing</b>
+Hey so today I have much progress.<br><li>- the first thing is that i runned!</li><br>- Second is that i clean my <i>desk</i><br><b style=""><i>I dont</i> know what i am typing</b>
 
 
 
