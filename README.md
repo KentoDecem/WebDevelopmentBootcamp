@@ -187,46 +187,6 @@ I understood the basics of git.
 
 
 
-## Section 29: Capstone Project (Using APIs) - Commit&Tweet
-Hello Friends
-  Today I'm testing two api's:
-  - Twitter
-  - Github
-<img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif' alt='1. Presentation of Final Project' width="500">
-<img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.png' alt='2. Presentation of Final Project' width="500">
-
-
-Hej dzisiaj udało mi się:<li><b>wstałęm rano: </b>wiem dla mnie to wyczyn<li><b>biegałem</b>: 28km<li>cos tam jescze robiłem - np programowałem</li>
-
-
-
-
-## Section 29: Capstone Project (Using APIs) - Commit&Tweet
-Dzisiaj nauczyłem się:
-<li><b>Middleware: </b>czym są</li>
-<li><b>coffeMachine</b>: how to make coffe</li>
-<li><i>all the others</i></li>
-
-
-## Section 29: This was not an easy task:
-<li>make dashboard working</li>
-<li>design in figma</li>
-<li><i>others</i></li>
-This was not an easy task:
-<li>make dashboard working</li>
-<li>design in figma</li>
-<li><i>others</i></li>
-
-
-## Section 100: Commit&amp;Tweet - <span style="font-weight: 400;"><i>Logging Website</i></span>
-Yo i needed to do a lot of things:
-<li>design in <b>Figma</b></li>
-<li>logic of <i>server</i> and <i>dashboard</i></li>
-
-
-## Section 100: Commit&amp;amp;Tweet - &lt;span style="font-weight: 400;"&gt;&lt;i&gt;Logging Website&lt;/i&gt;&lt;/span&gt;
-Description
-
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
