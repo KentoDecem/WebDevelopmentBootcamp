@@ -220,6 +220,12 @@ Hej <u>dzisiaj</u> naprawdę <b>dużo</b> zrozumiałem:
 <li><b><u>EJS:</u></b> DB</li>
 
 
+## Section 29: Capstone Project (Using APIs) - Commit&Tweet
+Hej ziomek:<br>
+Dzisiaj sie uczylem expressjs:
+<li>nie było łatwo: <b><i>cos tam</i></b> - ale działa</li>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
