@@ -208,6 +208,16 @@ Dzisiaj nauczyłem się:
 <li><i>all the others</i></li>
 
 
+## Section 29: This was not an easy task:
+<li>make dashboard working</li>
+<li>design in figma</li>
+<li><i>others</i></li>
+This was not an easy task:
+<li>make dashboard working</li>
+<li>design in figma</li>
+<li><i>others</i></li>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
