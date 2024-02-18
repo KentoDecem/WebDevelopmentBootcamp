@@ -196,6 +196,15 @@ Yo i needed to do a lot of things:<br>
 &lt;li&gt;logic of &lt;i&gt;server&lt;/i&gt; and &lt;i&gt;dashboard&lt;/i&gt;&lt;/li&gt;
 
 
+## Section: 12 - A lot of hard work in the primary school!
+So i learn the basic of alphabets:
+<li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+and a lot of more but i dont want to spam, <i>it is not that i don't remember</i>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
