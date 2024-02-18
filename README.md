@@ -212,6 +212,14 @@ cs<br>
 cs
 
 
+## Section 29: Capstone Project (Using APIs) - Commit&Tweet
+Hej <u>dzisiaj</u> naprawdę <b>dużo</b> zrozumiałem:
+<li>ExpressJS: BDB</li>
+<li><i>jQuery:</i> DOP</li>
+<li><b>NodeJS:</b> CEL</li>
+<li><b><u>EJS:</u></b> DB</li>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
