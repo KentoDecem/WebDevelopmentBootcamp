@@ -206,6 +206,12 @@ Hej dzisiaj udało mi się:<li><b>wstałęm rano: </b>wiem dla mnie to wyczyn<li
 <b>cos</b>
 
 
+## Section 29: Capstone Project (Using APIs) - Commit&Tweet
+cs<br>
+cs<br>
+cs
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
