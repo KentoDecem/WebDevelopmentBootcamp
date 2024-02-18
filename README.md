@@ -224,6 +224,10 @@ Yo i needed to do a lot of things:
 <li>logic of <i>server</i> and <i>dashboard</i></li>
 
 
+## Section 100: Commit&amp;amp;Tweet - &lt;span style="font-weight: 400;"&gt;&lt;i&gt;Logging Website&lt;/i&gt;&lt;/span&gt;
+Description
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
