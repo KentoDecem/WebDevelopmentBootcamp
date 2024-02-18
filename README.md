@@ -188,6 +188,14 @@ I understood the basics of git.
 
 
 
+## Section 24: Commit.js<br>
+And a lot of other things
+<br>
+Yo i needed to do a lot of things:<br>
+&lt;li&gt;design in &lt;b&gt;Figma&lt;/b&gt;&lt;/li&gt;<br>
+&lt;li&gt;logic of &lt;i&gt;server&lt;/i&gt; and &lt;i&gt;dashboard&lt;/i&gt;&lt;/li&gt;
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
