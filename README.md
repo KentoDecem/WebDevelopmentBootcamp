@@ -200,31 +200,6 @@ Hej dzisiaj udało mi się:<li><b>wstałęm rano: </b>wiem dla mnie to wyczyn<li
 
 
 
-## Section 29: Capstone Project (Using APIs) - Commit&Tweet
-<b>cos</b>
-<b>cos</b>
-<b>cos</b>
-
-
-## Section 29: Capstone Project (Using APIs) - Commit&Tweet
-cs<br>
-cs<br>
-cs
-
-
-## Section 29: Capstone Project (Using APIs) - Commit&Tweet
-Hej <u>dzisiaj</u> naprawdę <b>dużo</b> zrozumiałem:
-<li>ExpressJS: BDB</li>
-<li><i>jQuery:</i> DOP</li>
-<li><b>NodeJS:</b> CEL</li>
-<li><b><u>EJS:</u></b> DB</li>
-
-
-## Section 29: Capstone Project (Using APIs) - Commit&Tweet
-Hej ziomek:<br>
-Dzisiaj sie uczylem expressjs:
-<li>nie było łatwo: <b><i>cos tam</i></b> - ale działa</li>
-
 
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
