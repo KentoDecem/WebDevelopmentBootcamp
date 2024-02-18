@@ -218,6 +218,12 @@ This was not an easy task:
 <li><i>others</i></li>
 
 
+## Section 100: Commit&amp;Tweet - <span style="font-weight: 400;"><i>Logging Website</i></span>
+Yo i needed to do a lot of things:
+<li>design in <b>Figma</b></li>
+<li>logic of <i>server</i> and <i>dashboard</i></li>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
