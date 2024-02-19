@@ -1,0 +1,156 @@
+#dashboard {
+    min-height: 700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    min-height: 400px;
+    /* height:500px; */
+    max-width: 750px;
+    flex-basis: 50vw;
+    box-sizing: border-box;
+    padding: 40px 20px 40px 20px;
+    border: solid #365176;
+    border-width: 2px 4px 4px 2px;
+    border-radius: 44px;
+    transition: 0.3s flex-basis;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom:50px;
+    margin-top:50px;
+    
+    @media (max-width: 800px) {
+        flex-basis: 80vw;
+    }
+}
+
+.entry {
+    width:90%;
+    min-height:400px;
+    /* background-color: rgba(128, 0, 128, 0.053); */
+}
+
+.entryTitle {
+    color:white;
+    font-size:28px;
+    font-weight: bold;
+    max-width:100%;
+}
+
+#hrBlue {
+    background-color: #365176;
+    height: 3px;
+    border:none;
+    border-radius: 50px;
+}
+
+.entryDescription {
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.entryButtons {
+    padding-top: 20px;
+    width:90%;
+    height:15%;
+    /* background-color: rgba(216, 112, 147, 0.032); */
+    display:flex;
+    align-items: end;
+    gap:50px;
+
+    @media (max-width: 550px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#form {
+    margin-left: auto;
+    
+    @media (max-width: 550px) {
+        margin: 0;
+    }
+}
+
+.submitEntryButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    height:40px;
+    justify-self: end;
+    background-color: #14171A;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 25px;
+
+    /* border: solid #00ADFE; */
+    /* border-width: 0 3px 0 0; */
+    transform: translateX(-3px);
+    filter: drop-shadow(3px 0px 0px #00ADFE);
+    
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color:white;
+
+    transition: filter 0.3s;
+
+}
+
+.submitEntryButton:hover {
+    filter: drop-shadow(3px 0px 0px #00ADFE) drop-shadow(2px 0px 4px #00ADFE);
+    cursor: pointer;
+}
+
+.githubEntryButton, .twitterEntryButton {
+    display:flex;
+    align-items: center;
+    height: 40px;
+    border: solid transparent;
+    border-width: 0 0 5px 0px;
+    border-radius: 0 0 4px 15px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.githubEntryButton:hover, .twitterEntryButton:hover {
+    opacity: 0.9;
+}
+
+.entrySwitchActive {
+    border: solid #365176;
+    border-width: 0 0 5px 0px;
+    border-radius: 0 0 4px 15px;
+    opacity:1;
+}
+
+.githubEntryButton {
+    width: 100px;
+}
+
+.twitterEntryButton {
+    width: 110px;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+.twitterEntryButton img {
+    filter: saturate(0) brightness(2);
+}
+
+.githubEntryButton img, .twitterEntryButton img {
+    width:100%;
+    height:auto;
+}

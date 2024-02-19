@@ -1,0 +1,41 @@
+<%- include("partials/header.ejs", {activePage: "Dashboard"}) %>
+
+<section id="dashboard">
+    <div class="input">
+        <div class="entry">
+            <div class="entryTitle" contenteditable="true"><%- title %></div>
+            <hr id="hrBlue">
+            <div class="entryDescription" contenteditable="true"><%- description %></div>
+        </div>
+
+        
+        <div class="entryButtons">
+            <div class="githubEntryButton entrySwitchActive"><img src="images/github-text.png"></div>
+            <div class="twitterEntryButton"><img src="images/twitter-text.png"></div>
+            <form id="form" action="/submit-github" method="POST" onsubmit="return getContent()">
+                <textarea id="textareaTitle" name="title" style="display:none"></textarea>
+                <textarea id="textareaDescription" name="description" style="display:none"></textarea>
+                <input class="submitEntryButton" value="Submit" type="submit">
+            </form>
+        </div>
+
+    </div>    
+</section>
+
+<script src="scripts/switchPost.js" defer></script>
+
+<script>
+    document.querySelector(".entryTitle").addEventListener('keydown', (evt) => {
+    if (evt.keyCode === 13) {
+        evt.preventDefault();
+    }
+    });
+
+    function getContent(){
+        document.getElementById("textareaTitle").value = document.querySelector(".entryTitle").innerHTML
+        document.getElementById("textareaDescription").value = document.querySelector(".entryDescription").innerHTML
+    }
+</script>
+
+
+<%- include("partials/footer.ejs") %>

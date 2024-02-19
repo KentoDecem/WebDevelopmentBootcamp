@@ -1,4 +1,4 @@
-import express from "express" // Server
+import express, { application } from "express" // Server
 import 'dotenv/config' // Environmental Variables
 import fs from "fs" // Saving images on server
 import axios from "axios" // Downloading Images from internet: (raw.githubusercontent.com)
@@ -9,9 +9,15 @@ import chalk from "chalk" // Color in terminal
 const app = express()
 const port = 3000
 
+app.use(express.static("public"))
+app.use(express.urlencoded({ extended: true }));
+
 //TODO: Future
 // 2. Pomyśl na możliwością aktualizowania banera albo bio na twitterze = "Currently working on Section 29 of WebDev"
 // 3n. Podstrona wyświetlająca wszystkie dotychczasowe notatki
+
+// 5. By default when user do not use dashboard, profile info has button Get Started instead of some not found profile
+// 6. When user open dashboard - we will give him examples of posts with typing effect.
 
 //TODO: Lista
 //// 1. Dodaj możliwość dodawania img do readme.
@@ -21,6 +27,10 @@ const port = 3000
 
 
 //! Main Inputs:
+  let title = ""
+  let description = ""
+
+
   let mainTitle = "Capstone Project (Using APIs) - Commit&Tweet"
   let mainText = `Hello Friends
   Today I'm testing two api's:
@@ -85,7 +95,7 @@ async function creatingTwitterPost() {
 
 
   //Twitter Text Content
-  let mainTextTwitter = `${mainTitle}\n` + mainText + `\n\n#${mainType}${mainNumber} ${mainTagsOutput}`
+  let mainTextTwitter = `${mainType} ${mainNumber}: ${mainTitle}\n` + mainText + `\n\n${mainTagsOutput}`
   console.log(chalk.cyan(chalk.bold.underline("Twitter:\n") + mainTextTwitter + "\n" + selectedImages + "\n"))
 
   //* Creating Tweet
@@ -95,6 +105,16 @@ async function creatingTwitterPost() {
   });
 }
 
+async function getTwitterProfileInfo() {
+  //Access User
+  let twitterUserInfo = await twitterClient.currentUser()
+  let twitterProfileName = twitterUserInfo.screen_name
+  let twitterProfilePicture = twitterUserInfo.profile_image_url_https
+
+  console.log(chalk.cyan(twitterProfileName))
+  console.log(chalk.cyan(twitterProfilePicture))
+}
+
 
 //* Github Object
 const octokit = new Octokit({ 
@@ -102,6 +122,30 @@ const octokit = new Octokit({
 });
 
 //* Github Area
+async function getGithubProfileInfo() {
+try {
+    // Fetch authenticated user's profile information
+    const { data: user } = await octokit.rest.users.getAuthenticated();
+
+    // Access and log desired profile information
+    console.log(`Username: ${user.login}`);
+    console.log(`Avatar URL: ${user.avatar_url}`); // Accessing additional fields
+
+
+    const { data: repositories } = await octokit.rest.repos.listForAuthenticatedUser();
+
+    // Show repository names
+    console.log(`**Lista repozytoriów:**`);
+    for (const repo of repositories) {
+      console.log(`- ${repo.name}`);
+    }
+
+
+  } catch (error) {
+    console.error('Error fetching GitHub profile:', error);
+  }
+}
+
 async function downloadPresentationImages() {
   // Removing and Creating folder Downloaded so that it will become brand new again...
   fs.rmSync(downloadedImagesFolderPath, { recursive: true, force: true });
@@ -137,7 +181,26 @@ async function downloadPresentationImages() {
 
 }
 
-async function updatingReadme() {
+async function updatingReadme(title, description) {
+  // Changing description and title to readme
+    // divs to new lines
+    description = description.replace(/<div>/g, '<br>\n').replace(/<\/div>/g, '');
+    title = title.replace(/<div>/g, '<br>\n').replace(/<\/div>/g, '');
+
+    // if br than replace to <br>\n
+    description = description.replace(/<br>(<b[^>]*>)?(<i[^>]*>)?(<u[^>]*>)?- /g, '\n$1$2$3- ');
+    title = title.replace(/<br>(<b[^>]*>)?(<i[^>]*>)?(<u[^>]*>)?- /g, '\n$1$2$3- ');
+  
+    // replace - to li
+    description = description.replace(/^(<b[^>]*>)?(<i[^>]*>)?(<u[^>]*>)?- (.+?)($|<br>)/gm, '<li>$1$2$3$4</li>');
+    title = title.replace(/^(<b[^>]*>)?(<i[^>]*>)?(<u[^>]*>)?- (.+?)($|<br>)/gm, '<li>$1$2$3$4</li>');
+  
+    // check if br is in the first line and delete it if li is in the second one
+    description = description.replace(/<br>\n<li>/, '\n<li>');
+    title = title.replace(/<br>\n<li>/, '\n<li>');
+    
+
+
   
   //* Download info about README.md
   const response = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
@@ -156,7 +219,7 @@ async function updatingReadme() {
   var decodedString = decodedData.toString('utf-8');
 
   // New text to add before section "Contributing"
-  var mainTextGithub = `## ${mainType} ${mainNumber}: ${mainTitle}\n${mainText}`;
+  var mainTextGithub = `## ${title}\n${description}`;
 
   // if files '*presentation*.*' then add them to mainTextGithub
   if (presentationLinksList.length > 0) {
@@ -188,10 +251,10 @@ async function updatingReadme() {
         owner: OWNER,
         repo: REPO,
         path: PATH,
-        message: `Add ${mainType} ${mainNumber}: ${mainTitle}\n${mainText}`,
+        message: `Add ${mainType} ${mainNumber}: ${title}\n${description}`,
         committer: {
-          name: OWNER_NAME,
-          email: OWNER_MAIL
+          name: "Commit&Tweet",
+          email: "xyz@gmail.com"
         },
         content: readyToSendString,
         sha: SHA,
@@ -206,13 +269,58 @@ async function updatingReadme() {
 }
 
 
-app.get("/", async (req,res) => {
+app.post("/submit-github", async (req,res) => {
+  description = req.body.description;
+  title = req.body.title;
 
+  // Changing description to twitter
+  console.log(chalk.red(title))
+  console.log(chalk.yellowBright(description))
+  
   // await downloadPresentationImages()
-  // updatingReadme()
+  // updatingReadme(title, description)
+
+
   // creatingTwitterPost()
 
-  res.send("Hello")
+  res.render("dashboard.ejs", {title: title, description: description})
+})
+
+app.post("/submit-twitter", async (req,res) => {
+  description = req.body.description;
+  title = req.body.title;
+
+  // Changing description to twitter
+  console.log(chalk.red(title))
+  console.log(chalk.yellowBright(description))
+  
+  // await downloadPresentationImages()
+  // updatingReadme(title, description)
+
+
+  // creatingTwitterPost()
+
+  res.render("dashboard.ejs", {title: title, description: description})
+})
+
+
+app.get("/", async (req,res) => {
+
+ 
+  // getTwitterProfileInfo()
+  // getGithubProfileInfo()
+
+  res.render("index.ejs")
+})
+
+app.get("/dashboard", (req,res) => {
+
+  res.render("dashboard.ejs", {title: title||"Your very creative Title", description: description||"Write about what you achieve!<br>\n<li>ride a bike?</li>"})
+})
+
+app.get("/about_us", (req,res) => {
+
+  res.render("about.ejs")
 })
 
 

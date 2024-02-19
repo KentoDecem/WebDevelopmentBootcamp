@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    background-color: #161B22;
+}
+
+header {
+    background-color: #14171A;
+    min-height: 135px;
+    width:100%;
+    border: solid #365176;
+    border-width: 0 0 3px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
+}
+
+nav {
+    /* background-color: rgba(255, 0, 0, 0.046); */
+    display:flex;
+    gap:2px 30px;
+    max-width:650px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px 15px 0;
+}
+
+@media (max-width: 1100px) {
+    nav {
+        padding: 30px 0 15px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        flex-direction: column;
+        padding: 30px 0 0 0;
+    }
+}
+
+.navigationLogoA {
+    height:68px;
+    width:68px;
+    position:relative;
+    border-radius: 50%;
+    margin-left:50px;
+    @media (max-width:1100px){
+        margin-left:0;
+    }
+}
+
+.navigationLogoA:hover > .logoToHide {
+    opacity:0;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+.logoToHide {
+    animation: blink 0.5s;
+    transition: opacity 0.2s;
+}
+
+nav img {
+    position:absolute;
+    height:68px;
+    width:68px;
+    border-radius:50%;
+    transition: opacity 0.2s;
+}
+
+nav ul {
+    color:white;
+    /* background-color: rgba(255, 192, 203, 0.075); */
+    display:flex;
+    align-items: center;
+    list-style: none;
+    white-space: nowrap;
+    padding: 0;
+    width:auto;
+    text-align: center;
+    gap:15px;
+    transition: 0.3s font-size;
+
+    /* Regular */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; 
+    font-size:26px;
+    @media (max-width:550px) {
+        font-size: 20px;
+    }
+
+    @media (min-width:1600px){
+        font-size: 30px;
+    }
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color:white;
+    transition: 0.3s color;
+}
+
+nav li a:hover {
+    color: rgba(224, 224, 224, 0.792);
+}
+
+nav .active {
+    font-weight: 700;
+}
+
+nav .separator {
+    color: #365176;
+    font-weight: 900;
+    user-select: none;
+}
+
+
+
+
+/* Right Side */
+
+.accounts {
+    max-width:600px;
+    height:100px;
+    /* background-color: rgba(0, 0, 255, 0.155); */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:24px;
+    color:white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    padding-left:35px;
+    padding-right:35px;
+    transition: padding 0.3s;
+
+    @media (min-width:1500px) {
+        padding-right:130px;
+    }
+    @media (max-width:1100px) {
+        padding: 0 0 30px 0;
+    }
+}
+
+.githubProfile,
+.twitterProfile {
+    display:flex;
+    align-items: center;
+    gap:24px;
+    font-size: 20px;
+    transition: 0.3s font-size;
+
+    @media (max-width:550px) {
+        font-size: 13px;
+    }
+}
+
+.profileImage {
+    width:28px;
+    height: 28px;
+    background-color: rgba(0, 255, 255, 0);
+    transition: 0.3s width, 0.3s height;
+    @media (max-width:550px) {
+        width:20px;
+        height: 20px;
+    }
+}
+
+.profileImage img {
+    width: 100%;
+    height: auto; 
+}
+
+.profileImage {
+    transition: filter 0.3s;
+}
+
+.profileImage:hover {
+    filter: opacity(0.7);
+}
+
+.profileUser {
+    display:flex;
+    gap:5px;
+}
+
+.profileUser span {
+    color: #00ADFE;
+}
+
+.profileUsername a {
+    color:white;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+.profileUsername a:hover {
+    color: rgba(224, 224, 224, 0.792);
+}
+
+.profileUser .githubRepo {
+    font-weight:500;
+}
+
+.githubRepo a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+.githubRepo a:hover {
+    color: rgba(224, 224, 224, 0.792);
+}
