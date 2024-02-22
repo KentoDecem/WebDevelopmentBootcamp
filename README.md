@@ -220,6 +220,15 @@ So i manage to almost make my Commit &amp; Tweet app work
 asdf
 
 
+## Something working
+You today i masdft:<br>
+<li><b>very 1</b></li>
+<li>1</li>
+<li><b><i>ital 2</i></b></li>
+<li>2</li>
+Yea so this is my work
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
