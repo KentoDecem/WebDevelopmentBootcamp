@@ -209,6 +209,10 @@ and a lot of more but i dont want to spam, <i>it is not that i don't remember</i
 2
 
 
+## <span style="font-weight: normal;">Hello i'm halfway throught the course!</span>
+So i manage to almost make my Commit &amp; Tweet app work
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
