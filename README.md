@@ -237,6 +237,13 @@ Yea so this is my work
 
 
 
+## General Test
+so this is my <b>test</b> if it work correctly:
+<ul><li>a</li>
+<li><b>b</b></li>
+<li><b><i>ib</i></b></li></ul>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
