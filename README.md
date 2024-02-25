@@ -190,6 +190,10 @@ I understood the basics of git.
 Write a description so good that even your grandma would share it.
 
 
+## Craft a Github title.
+Channel your inner Yoda and write a description that's both wise and slightly self-deprecating about your learning journey ("Failed I have, but learned much").
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
