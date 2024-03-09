@@ -3,6 +3,7 @@ footer {
     min-height:100px;
     display:flex;
     justify-content: center;
+    position:relative;
 }
 
 footer ul {

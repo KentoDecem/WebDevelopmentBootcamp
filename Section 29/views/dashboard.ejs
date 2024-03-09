@@ -1,21 +1,38 @@
-<%- include("partials/header.ejs", {activePage: "Dashboard"}) %>
+<%- include("partials/header.ejs", {activePage: "Dashboard", profileNameTwitter: profileNameTwitter, profilePictureTwitter: profilePictureTwitter, profileNameGithub: profileNameGithub, profilePictureGithub: profilePictureGithub, repository: repository}) %>
 
 <section id="dashboard">
+
+    <%- include("partials/settings.ejs") %>
+
     <div class="input">
-        <div class="entry">
-            <div class="entryTitle" contenteditable="true"><%- title %></div>
-            <hr id="hrBlue">
-            <div class="entryDescription" contenteditable="true"><%- description %></div>
+        <div class="entries">
+            <div class="entryGithub">
+                <div class="entryTitle" contenteditable="true"></div>
+                <hr id="hrBlue">
+                <div class="entryDescription" contenteditable="true"></div>
+                <button class="clearButton"><img src="images/delete.png"></button>
+            </div>
+
+            <div class="entryTwitter">
+                <div class="entryTitle" contenteditable="true"></div>
+                <hr id="hrBlueTwitter">
+                <div class="entryDescription" contenteditable="true"></div>
+                <button class="clearButton"><img src="images/delete.png"></button>
+            </div>
         </div>
 
         
         <div class="entryButtons">
-            <div class="githubEntryButton entrySwitchActive"><img src="images/github-text.png"></div>
+            <div class="githubEntryButton"><img src="images/github-text.png"></div>
             <div class="twitterEntryButton"><img src="images/twitter-text.png"></div>
-            <form id="form" action="/submit-github" method="POST" onsubmit="return getContent()">
-                <textarea id="textareaTitle" name="title" style="display:none"></textarea>
-                <textarea id="textareaDescription" name="description" style="display:none"></textarea>
+            <form id="form" action="/submit-github" method="POST">
+                <textarea id="textareaTitleGithub" name="titleGithub" style="display:none"></textarea>
+                <textarea id="textareaTitleTwitter" name="titleTwitter" style="display:none"></textarea>
+                <textarea id="textareaDescriptionGithub" name="descriptionGithub" style="display:none"></textarea>
+                <textarea id="textareaDescriptionTwitter" name="descriptionTwitter" style="display:none"></textarea>
                 <input class="submitEntryButton" value="Submit" type="submit">
+                <div id="charCount">0</div>
+                <div class="previewButton">Preview</div>
             </form>
         </div>
 
@@ -24,18 +41,6 @@
 
 <script src="scripts/switchPost.js" defer></script>
 
-<script>
-    document.querySelector(".entryTitle").addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 13) {
-        evt.preventDefault();
-    }
-    });
-
-    function getContent(){
-        document.getElementById("textareaTitle").value = document.querySelector(".entryTitle").innerHTML
-        document.getElementById("textareaDescription").value = document.querySelector(".entryDescription").innerHTML
-    }
-</script>
-
 
 <%- include("partials/footer.ejs") %>
+<%- include("partials/belowFooter.ejs") %>

@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/about.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" async></script>
 </head>
 <body>
     <header>
@@ -26,24 +29,23 @@
                 <li <% if (activePage === 'Home') { %> class="active"<% }%> ><a href="/">Home</a></li>
                 <li class="separator">|</li>
                 <li <% if (activePage === 'Dashboard') { %> class="active"<% }%> ><a href="/dashboard">Dashboard</a></li>
-                <li class="separator">|</li>
-                <li <% if (activePage === 'About Us') { %> class="active"<% }%>><a href="/about_us">About Us</a></li>
+                <!-- <li class="separator">|</li>
+                <li <% if (activePage === 'About Us') { %> class="active"<% }%>><a href="/about_us">About Us</a></li> -->
             </ul>
         </nav>
 
         <div class="accounts">
             <div class="githubProfile">
-                <div class="profileImage"><a href="https://github.com" target="_blank"><img src="images/github-logo.png"></a></div>
+                <div class="profileImage"><a href="<%= profileNameGithub !== 'No Profile Found' ? 'https://github.com/' + profileNameGithub : 'https://github.com' %>" target="_blank"><img src="<%= profilePictureGithub %>" class="<%= profilePictureGithub !== 'images/github-logo.png' ? 'profileImageActive' : '' %>"></a></div>
                 <div class="profileUser">
-                    <div class="profileUsername"><a href="">KentoDecem</a></div><span>/</span>
-                    <div class="githubRepo"><a href="">WebDevelopmentBootcamp</a></div>
+                    <div class="profileUsername"><a href="<%= profileNameGithub !== 'No Profile Found' ? 'https://github.com/' + profileNameGithub : 'https://github.com' %>" target="_blank"><%= profileNameGithub %></a></div><span>/</span>
+                    <div class="githubRepo"><a href="<%= repository !== 'No Repository' ? 'https://github.com/' + profileNameGithub + '/' + repository : 'https://github.com' %>" target="_blank"><%= repository %></a></div>
                 </div>
             </div>
 
             <div class="twitterProfile">
-                <div class="profileImage"><a href="https://x.com" target="_blank"><img src="images/x-logo.png"></a></div>
-                <div class="profileUser">No Profile Found</div>
+                <div class="profileImage"><a href="<%= profileNameTwitter !== 'No Profile Found' ? 'https://x.com/' + profileNameTwitter : 'https://x.com' %>" target="_blank"><img src="<%= profilePictureTwitter %>" class="<%= profilePictureTwitter !== 'images/x-logo.png' ? 'profileImageActive' : '' %>"></a></div>
+                <div class="profileUser"><a href="<%= profileNameTwitter !== 'No Profile Found' ? 'https://x.com/' + profileNameTwitter : 'https://x.com' %>" target="_blank"><%= profileNameTwitter %></a></div>
             </div>
         </div>
-
     </header>

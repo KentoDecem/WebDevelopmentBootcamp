@@ -1,7 +1,83 @@
-<%- include("partials/header.ejs", {activePage: "Home"}) %>
+<%- include("partials/header.ejs", {activePage: "Home", profileNameTwitter: profileNameTwitter, profilePictureTwitter: profilePictureTwitter, profileNameGithub: profileNameGithub, profilePictureGithub: profilePictureGithub, repository: repository}) %>
 
-<section id="firstIndexSection">
-    <h1>Welcome</h1>
+<section id="index">
+    <%- include("partials/settings.ejs") %>
+    
+    <div id="movable">
+
+
+        <div class="hero">
+            <div class="visual">
+                <div class="visualCommit">
+                    <h1>Commit</h1>
+                    <img src="images/line.png" class="line">
+                    <img src="images/cat.png" class="cat">
+                </div>
+
+                <div class="visualTweet">
+                    <h1>Tweet</h1>
+                    <img src="images/bird.png" class="bird">
+                </div>
+            </div>
+
+            <div class="heroText">
+                <h2>Twice the reach, half the effort!</h2>
+                <h3><span>Commit & Tweet</span> seamlessly integrates your <b>GitHub</b> and <b>Twitter</b> presence!</h3>
+            </div>
+        </div>
+
+        <div class="videoBox">
+            <video width="50%" height="auto" class="video" autoplay muted>
+                <source src="videos/post1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h2>
+                <img src="images/line video.png" class="videoLine">
+                <span id="sampleText">Sample results:</span>
+            </h2>
+
+            <div class="buttonsGradient">
+                <img src="images/github-text1.png" class="gradientGithub">
+                <img src="images/twitter-text1.png" class="gradientTwitter">
+
+            </div>
+
+            <div class="results">
+                <video width="500px" height="auto" class="videoGithub" autoplay muted>
+                    <source src="videos/github.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video width="440px" height="auto" class="videoTwitter" autoplay muted>
+                    <source src="videos/twitter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>How to Share Your Insights?</h2>
+            <ul>
+                <li><b>Sync Up APIs:</b> Connect your API keys for boundless sharing.</li>
+                <li><b>GitHub Gear-Up:</b> Provide the name of your <u>repository</u>, current <u>directory</u> and <u>README.md</u> path.</li>
+                <li><b>Craft Your Gem 💎:</b> Share what you've mastered today.</li>
+                <li><b>Ignite the Web:</b> Watch as your wisdom illuminates Twitter and updates GitHub!</li>
+            </ul>
+        </div>
+
+
+
+    </div>
 </section>
 
+
+<script src="scripts/buttonsPreview.js" defer></script>
+
+<script>
+    localStorage.removeItem('visitedDashboardGithub');
+    localStorage.removeItem('visitedDashboardTwitter');
+</script>
+
 <%- include("partials/footer.ejs") %>
+<%- include("partials/belowFooter.ejs") %>

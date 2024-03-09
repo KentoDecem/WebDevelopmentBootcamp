@@ -1,9 +1,14 @@
 body {
     margin: 0;
     background-color: #161B22;
+    width: 100vw;
+    overflow-x: hidden;
+    position:relative;
 }
 
 header {
+    position:relative;
+    z-index: 3;
     background-color: #14171A;
     min-height: 135px;
     width:100%;
@@ -131,6 +136,7 @@ nav .separator {
 /* Right Side */
 
 .accounts {
+    position:relative;
     max-width:600px;
     height:100px;
     /* background-color: rgba(0, 0, 255, 0.155); */
@@ -186,6 +192,10 @@ nav .separator {
     transition: filter 0.3s;
 }
 
+.profileImageActive {
+    border-radius: 50%;
+}
+
 .profileImage:hover {
     filter: opacity(0.7);
 }
@@ -220,5 +230,15 @@ nav .separator {
 }
 
 .githubRepo a:hover {
+    color: rgba(224, 224, 224, 0.792);
+}
+
+.twitterProfile .profileUser a {
+    color:white;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+.twitterProfile .profileUser a:hover {
     color: rgba(224, 224, 224, 0.792);
 }
