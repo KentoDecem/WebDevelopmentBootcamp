@@ -189,7 +189,8 @@ I understood the basics of git.
 
 
 ## Section 29: Capstone Project - Commit &amp; Tweet
-Hey guys, so today I finished my work on the <i>Commit &amp; Tweet</i> website. It took me longer than I expected (3 weeks😅).<br>
+Hey guys, so today I finished my work on the <i>Commit &amp; Tweet</i> website.<br>
+It took me longer than I expected (3 weeks😅).<br>
 My goal was to create something practical, so now I'm writing to you using this new tool!<br>
 I managed to integrate the server with <b>Github API</b> and <b>Twitter API</b>.
 <img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif' alt='1. Presentation of Final Project' width="500">
