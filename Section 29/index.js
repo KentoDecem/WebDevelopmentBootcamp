@@ -166,13 +166,20 @@ async function creatingTwitterPost(titleTwitter, descriptionTwitter) {
   selectedImages = downloadedPathsList
 
   // Upload images to twitter if selectedImages is not empty
-  let mediaIds = [];
-  if (selectedImages.length > 0) {
-    const mediaPromises = selectedImages.map(element => {
-      return twitterClient.v1.uploadMedia(`${element}`);
-    });
-    mediaIds = await Promise.all(mediaPromises);
-  }
+let mediaIds = [];
+if (selectedImages.length > 0) {
+  const mediaPromises = selectedImages.map(async element => {
+    try {
+      return await twitterClient.v1.uploadMedia(`${element}`);
+    } catch (error) {
+      console.error('Błąd podczas przesyłania obrazu:', error);
+      return null; // Zwróć null w przypadku niepowodzenia
+    }
+  });
+  const results = await Promise.all(mediaPromises);
+  // Filtruj wyniki, aby pozbyć się nulli
+  mediaIds = results.filter(id => id !== null);
+}
 
   //Twitter Text Content
   let mainTextTwitter = `${titleTwitter}\n` + descriptionTwitter + `\n\n${mainTagsOutput}`

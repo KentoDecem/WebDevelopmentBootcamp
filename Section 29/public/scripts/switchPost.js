@@ -574,6 +574,7 @@ function twitterTitleConverter(areaTitleTwitter) {
     // Replace HTML tags and &nbsp; with spaces for titleTwitter
     areaTitleTwitter = areaTitleTwitter.replace(/<.*?>/g, "");
     areaTitleTwitter = areaTitleTwitter.replace(/&nbsp;/g, " ");
+    areaTitleTwitter = areaTitleTwitter.replace(/&amp;/g, "&");
 
     return areaTitleTwitter
 }
@@ -583,5 +584,6 @@ function twitterDescriptionConverter(areaDescriptionTwitter) {
     areaDescriptionTwitter = areaDescriptionTwitter.replace(/<br>/g, "\n");
     areaDescriptionTwitter = areaDescriptionTwitter.replace(/<.*?>/g, "");
     areaDescriptionTwitter = areaDescriptionTwitter.replace(/&nbsp;/g, " ");
+    areaDescriptionTwitter = areaDescriptionTwitter.replace(/&amp;/g, "&");
     return areaDescriptionTwitter
 }
