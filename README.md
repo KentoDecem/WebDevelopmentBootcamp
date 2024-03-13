@@ -197,13 +197,6 @@ I managed to integrate the server with <b>Github API</b> and <b>Twitter API</b>.
 
 
 
-## Section 30 - Build your API
-hey, today I learned how to build Internal API.<br>
-I played around with different routes like put, patch, delete etc.
-<img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2029/presentation.gif' alt='1. Presentation of Final Project' width="500">
-
-
-
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
