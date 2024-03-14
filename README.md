@@ -204,6 +204,11 @@ I played around with different routes like put, patch, delete etc.
 
 
 
+## Section 31: Database Basics.
+Today I understood why we need databases and what benefits they bring us.<br>
+Now I also know what types of database there are, what is the difference between SQL and NoSQL.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
