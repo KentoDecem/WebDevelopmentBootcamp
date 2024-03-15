@@ -5,7 +5,7 @@ import axios from "axios" // Downloading Images from internet: (raw.githubuserco
 import { TwitterApi } from "twitter-api-v2" // Twitter
 import { Octokit } from "octokit"; // Github
 import chalk from "chalk" // Color in terminal
-import multer from 'multer'; // Upload keys to server
+import multer from 'multer'; // Upload keys to our server
 
 const app = express()
 const port = process.argv[2] || 3000;
