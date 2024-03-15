@@ -209,6 +209,16 @@ Today I understood why we need databases and what benefits they bring us.<br>
 Now I also know what types of database there are, what is the difference between SQL and NoSQL.
 
 
+## Section 32: SQL Commands
+Hi today, I understood basic SQL commands like:
+<ul><li>CREATE Table</li>
+<li>INSERT Date</li>
+<li>SELECT Statement</li>
+<li>DELETE</li>
+<li>UPDATE WHERE and ALTER</li>
+<li>the hardest to understand - INNER JOIN</li></ul>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
