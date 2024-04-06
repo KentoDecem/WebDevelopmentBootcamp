@@ -219,6 +219,13 @@ Hi today, I understood basic SQL commands like:
 <li>the hardest to understand - INNER JOIN</li></ul>
 
 
+## Section 33: PostgreSQL
+So today I understood the basics of PostgreSQL.
+<ul><li>I learned how to use pgAdmin.</li>
+<li>I created some databases.</li>
+<li>I did two practical projects: Family Travel Tracker and Permalist (To Do List)</li></ul>
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
