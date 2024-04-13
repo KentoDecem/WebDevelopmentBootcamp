@@ -229,6 +229,13 @@ So today I understood the basics of PostgreSQL.
 
 
 
+## Section 34: Capstone Project - Book Notes
+Over the last few days, I have been making a website where you can save your notes about the books you have read.<br>
+Thanks to this, I deepened my knowledge of databases and server logic.
+<img src='https://raw.githubusercontent.com/KentoDecem/WebDevelopmentBootcamp/main/Section%2034/presentation.gif' alt='1. Presentation of Final Project' width="500">
+
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
