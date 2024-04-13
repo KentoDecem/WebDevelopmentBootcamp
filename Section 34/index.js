@@ -7,7 +7,7 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 
-let API_KEY = ""
+let API_KEY = "Y6wmLNnwVrAlwCjB5+bRog==k6gwXRsjuL79ZYRy"
 
 
 // Konfiguruj storage (jeśli jest to potrzebne)
