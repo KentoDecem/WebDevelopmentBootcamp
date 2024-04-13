@@ -1,0 +1,793 @@
+@font-face {
+    font-family: "Megrim";
+    src: url("../fonts/Megrim.ttf");
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #FFFFFF 0%,
+        #d5e2ff 100%
+    ) no-repeat center center fixed;
+    background-size: cover;
+    margin:0;
+    padding:0;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 20%;
+    margin-right:30%;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    gap:40px;
+    position: relative;
+    width:50%;
+}
+
+h1 {
+    margin:0;
+    padding:0;
+    font-family: 'Megrim', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+    background: linear-gradient(45deg, #547FCB 0%, #323676 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 850px;
+}
+
+h2, .title {
+    margin:0;
+    padding:0;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 450px;
+    font-size: 32px;
+    background: linear-gradient(135deg, #EA805D 0%, #E8614F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card_content h2, .card_content .title {
+    font-size: 38px;
+    max-width: none;
+}
+
+.title {
+    border:0;
+    border-radius: 10px;
+    position:absolute;
+    top:0;
+    outline:0;
+}
+
+.author, .author_input {
+    margin:0;
+    padding:0;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #547FCB;
+}
+
+.author_input {
+    background-color: transparent;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align: end;
+    border:0;
+    outline:0;
+    transition: padding 0.4s;
+}
+
+#hero img {
+    width:650px;
+}
+
+#hero input {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #EA805D 0%, #E8614F 100%);
+    border:0;
+    padding: 5px 20px;
+    border-radius: 35px;
+    cursor:pointer;
+    transition: padding 0.4s;
+
+}
+
+#hero input:hover {
+    padding: 5px 30px;
+}
+
+#hero img {
+    max-width: 800px;
+    position: absolute;
+    right:-200px;
+    top:100px;
+    z-index: -1;
+}
+
+
+#vector4 {
+    width: 2080px;
+    position: absolute;
+    right:250px;
+    top:0;
+    z-index: -2;
+}
+
+#recent_revisions {
+    margin-top:-50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap:40px;
+    position: relative;
+    width:100%;
+}
+
+#recent_revisions_box {
+    width: 70%;
+    display:flex;
+    justify-content: space-evenly;
+    gap:40px;
+}
+
+
+
+#recent_revisions_box .card {
+    width: 400px;
+    height:500px;
+    background-color: rgba(0, 128, 0, 0.092);
+    background: url("../images/paper1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+
+#recent_revisions_box h3, #recent_revisions_box p {
+    rotate: -11.5deg;
+    width:50%;
+    transform: translateX(55px) translateY(25px);
+
+}
+
+#recent_revisions_box h3 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+    color: #000000;
+    margin:55px 0 0 0;
+    padding:0;
+}
+
+#recent_revisions_box p {
+    font-family: "Alegreya Sans SC", sans-serif;
+    transform: translateX(75px) translateY(20px);
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 21px;
+    margin:0;
+    width:65%;
+    max-width:200px;
+    max-height:180px;
+    overflow-y:auto;
+    scrollbar-width: thin; /* Grubość paska przewijania */
+    scrollbar-color: #ffffff #515e67;
+    padding:10px;
+}
+
+
+/* Biblioteka */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+#container {
+    width:70%;
+}
+
+#biblioteczka_top {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    align-items: end;
+    box-sizing: border-box;
+    gap:40px;
+    position: relative;
+    width:100%;
+}
+#biblioteczka_top form {
+    margin-bottom: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 26px;
+    color: #323676;
+}
+#biblioteczka_top form select {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 26px;
+    background-color: transparent;
+    text-decoration: underline;
+    border:0px;
+    outline: 0px;
+    color: #323676 ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    cursor:pointer;
+    transition: padding 0.4s;
+    border-radius: 50px;
+
+}
+#biblioteczka_top form select option {
+    font-size: 22px;
+    background-color: #eaf1ff;
+}
+
+#biblioteczka_top a {
+    justify-self: end;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-decoration: none;
+    color:white;
+    background: linear-gradient(45deg, #547FCB 0%, #323676 100%);
+    padding: 7px 20px;
+    border-radius: 35px;
+    cursor:pointer;
+    transition: padding 0.4s;
+    text-align: center;
+}
+
+#biblioteczka_top a:hover {
+    padding: 8px 30px;
+}
+
+
+.card img {
+    width: 150px;
+}
+
+.card form {
+    width: 100%;
+}
+
+.card form div {
+    position: relative;
+}
+
+.note {
+    width: 100%;
+    height: 200px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.1px;
+    line-height: 38px;
+    margin: 0;
+    padding:0;
+}
+
+.note_input {
+    min-width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    position:absolute;
+    top:0;
+    border:0;
+    outline:0;
+    transition: padding 0.4s;
+}
+
+
+
+.edit_submit {
+    position: relative;
+}
+
+
+
+.delete_book {
+    display: flex;
+    justify-content: end;
+}
+
+.delete_book input {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 26px;
+    background-color: transparent;
+    color: #763232;
+    border: 0;
+    background-color: transparent;
+}
+.delete_book input:hover {
+    cursor:pointer;
+}
+
+#biblioteczka hr {
+    margin: 100px 0;
+    border-top: 5px dashed #547FCB;
+    border-image: linear-gradient(45deg, #547FCB 0%, #323676 100%) 1;
+    height: 0px;
+    background: transparent;
+    position:relative;
+}
+
+.hr_biblioteczka {
+    position:relative;
+}
+
+.hr_biblioteczka::before,
+.hr_biblioteczka::after {
+    content: ""; /* Dodajemy zawartość, aby pseudoelementy mogły być widoczne */
+    position: absolute; /* Ustawiamy pozycję absolutną */
+    width: 25px; /* Ustawiamy szerokość kółka */
+    height: 25px; /* Ustawiamy wysokość kółka */
+    border-radius: 50%; /* Ustawiamy promień zaokrąglenia, aby uzyskać kształt kółka */
+    z-index: 5;
+    top: 50%; /* Ustawiamy połowę wysokości elementu nadrzędnego */
+    transform: translateY(-50%);
+}
+
+.hr_biblioteczka::before {
+    left: 0; /* Ustawiamy kółko na początku */
+    background-color: #547FCB; /* Kolor kółka */
+}
+
+.hr_biblioteczka::after {
+    right: 0; /* Ustawiamy kółko na końcu */
+    background-color: #323676; /* Kolor kóła */
+}
+
+.bottom_card {
+    position:relative;
+    display:flex;
+    justify-content: start;
+    height:50px;
+    width: 100%;
+}
+.bottom_card_options {
+    position:absolute;
+    margin-left: auto;
+    right:0;
+    width: 100%;
+    height: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.bottom_card_options input, .bottom_card_options button {
+    font-size: 26px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #547FCB;
+    border: 0;
+    background-color: transparent
+}
+
+#input_confirm {
+    text-align: end;
+    height:50px;
+    right:0;
+}
+#input_confirm:hover {
+    cursor:pointer;
+}
+
+.edit_button {
+    right:0;
+}
+.edit_button:hover {
+    cursor:pointer;
+}
+
+.card_top {
+    color: black;
+    display:flex;
+    position:relative;
+}
+
+.cover {
+    width:400px;
+}
+
+.cover input{
+    left:60px;
+    top:150px;
+    position:absolute;
+    z-index: 10;
+}
+
+.cover_edit {
+    left:0;
+    position:absolute;
+    z-index: 5;
+}
+
+
+.cover img {
+    width:200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: -10px 10px #547FCB;
+}
+
+.card_content {
+    width:100%;
+}
+
+.card_title_author {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.card_title_author .title_box {
+    position:relative;
+    height:55px;
+}
+
+.bottom_rating_date {
+    margin-top: 20px;
+    display:flex;
+    gap:10px;
+    flex-direction: column;
+    position:relative;
+    height:100px;
+}
+
+.bottom_rating_date p, .bottom_rating_date input {
+    margin: 0;
+    padding:0;
+    font-size: 26px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #547FCB;
+    text-wrap: nowrap
+}
+
+.bottom_rating_date input {
+    position:absolute;
+    top:0;
+    z-index: 5;
+    background-color: transparent;
+    border:0;
+    outline: 0;
+}
+
+.p_rating {
+    position:absolute;
+    left:55px;
+    top:0;
+    transition: padding-left 0.4s;
+}
+
+.rating {
+    position:relative;
+    height:50px;
+}
+
+.date {
+    position:relative;
+    height:100px;
+}
+
+.addBookImage {
+    position:absolute;
+    left:15px;
+    bottom:15px;
+    z-index: 15;
+    width:100px !important;
+    height:100px !important;
+    box-shadow: none !important; 
+    filter: drop-shadow(7px 7px 0px rgb(80, 255, 211));
+    transition: filter 0.4s;
+    cursor: pointer;
+}
+
+.addBookImage:hover {
+    filter: drop-shadow(17px 17px 0px rgb(80, 255, 211));
+}
+
+.addBookImage img {
+    width:100px;
+    height:100px;
+}
+
+.delete_account {
+    text-decoration: none;
+    color:#763232;
+    font-size: 26px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    border: 0;
+    background-color: transparent
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 26px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+}
+
+footer a, footer p {
+    text-decoration: none;
+    color:#547FCB;
+}
+
+footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+/* New User */
+.add_user_form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form_label {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 46px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #EA805D;
+    text-wrap: nowrap
+}
+
+.input_add_user {
+    text-align: center;
+    margin: 25px;
+    font-size: 40px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #433a3a;
+    border: 3px solid #EA805D;
+    outline: 0;
+    background-color: transparent;
+    border-radius: 45px;
+    width:300px;
+}
+
+.input_add_user_submit {
+    text-align: center;
+    margin: 25px;
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #575757;
+    border: 3px solid #EA805D;
+    outline: 0;
+    background-color: transparent;
+    border-radius: 45px;
+    padding: 10px 20px;
+    transition: background-color 0.5s, color 0.5s, padding 0.5s, font-size 0.5s, border-radius 0.5s;
+}
+.input_add_user_submit:hover {
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #EA805D;
+    color: white;
+    padding: 55px 85px;
+    transition: padding 1.6s 0.4s,font-size 1.6s 0.4s, background-color 0.4s, color 0.4s, border-radius 1.4s 0.4s;
+
+}
+
+.add_book_container {
+    width:100%;
+    height: fit-content;
+    margin-top: 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: red; */
+}
+
+.form_add_book {
+    width:80%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#imagePreview {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 400px;
+    overflow: hidden; /* Zapobiega wyświetlaniu obrazka, który jest poza ramami kontenera */
+    background: url('../images/add_book.png'), linear-gradient(135deg, #EA805D 0%, #E8614F 100%);
+    background-size: 70%, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: #323676 -20px 20px 0px 0px;
+
+    border-radius: 25px;
+    margin:0 45px 45px 45px;
+    transition: box-shadow 0.3s;
+}
+
+#imagePreview:hover {
+    cursor: pointer;
+    box-shadow: #4249a3 -15px 15px 0px 0px;
+}
+
+#imagePreview img {
+    width: 100%;
+    height: 100%; /* Utrzymuje proporcje obrazka */
+    object-fit: cover;
+}
+
+.add_book_left {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add_book_left input {
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #ffffff;
+    border: 0px;
+    background: linear-gradient(135deg, #EA805D 0%, #E8614F 100%);
+    outline: 0;
+    border-radius: 45px;
+    padding: 10px 20px;
+    transition: background-color 0.5s, color 0.5s, padding 0.5s, font-size 0.5s, border-radius 0.5s;
+}
+
+.add_book_left input:hover {
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #EA805D;
+    color: white;
+    padding: 15px 25px;
+    transition: padding 1.6s 0.4s,font-size 1.6s 0.4s, background-color 0.4s, color 0.4s, border-radius 1.4s 0.4s;
+}
+
+
+.add_book_right {
+    height:100%;
+    width:70%;
+    display:flex;
+    flex-direction: column;
+}
+
+.ab_title_author {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* select first input */
+.ab_title_author input:first-child {
+    width: 68%;
+    font-size: 42px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #EA805D;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+    padding:0px;
+}
+
+/* select second input */
+.ab_title_author input:last-child {
+    text-align: end;
+    width: 32%;
+    font-size: 32px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #4249a3;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+    padding: 0 11px 20px 20px;
+}
+
+.ab_note {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.ab_note textarea {
+    margin-top: 10px;
+    width:100%;
+    height:100%;
+    font-size: 32px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #5c63c3;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+}
+
+.ab_rating_date {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #5c63c3;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+}
+
+.ab_rating_date input:first-of-type {
+    margin-left:10px;
+    width:50px;
+    font-size: 32px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #5c63c3;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+}
+
+#readed_date {
+    margin-left:10px;
+    font-size: 32px;
+    width:fit-content;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #5c63c3;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+}
+
+.no_books {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #000000;
+    border: 0px;
+    background: transparent;
+    outline: 0;
+}

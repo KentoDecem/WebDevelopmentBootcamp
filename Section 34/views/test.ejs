@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+
+<form action="/add_user" method="post" class="add_user_form">
+    <label class="form_label" for="name">Podaj imię:</label>
+    <input class="input_add_user" type="text" id="name" name="user" required>
+    <input class="input_add_user_submit" type="submit" value="Submit">
+</form>
+
+
+<%- include("partials/footer.ejs") %>

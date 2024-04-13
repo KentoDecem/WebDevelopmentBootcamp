@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs") %>
+
+
+
+<img src="images/Vector 4.png" id="vector4" alt="vector">
+
+<section id="hero">
+    <h1>Twoje książkowe rekolekcje</h1>
+    <h2>Stwórz osobistą przestrzeń do rozwoju intelektualnego.</h2>
+    <form action="/user" method="post">
+        <input type="submit" name="add_user" value="Dodaj użytkonika">
+    </form>
+    <img src="images/hero_book.png" alt="hero">
+</section>
+
+<section id="recent_revisions">
+    <div id="recent_revisions_box">
+        <div class="card">
+            <span class="card_content">
+                <h3><%= first_h3 %></h3>
+                <p><%= first_note %></p>
+            </span>
+        </div>
+        <div class="card">
+            <span class="card_content">
+                <h3><%= second_h3 %></h3>
+                <p><%= second_note %></p>
+            </span>
+        </div>
+        <div class="card">
+            <span class="card_content">
+                <h3><%= third_h3 %></h3>
+                <p><%= third_note %></p>
+            </span>
+        </div>
+    </div>
+</section>
+
+
+<%- include("partials/footer.ejs") %>

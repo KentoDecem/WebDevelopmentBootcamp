@@ -1,0 +1,140 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div id="container">
+        <img src="images/Vector 4.png" id="vector4" alt="vector" style="position:fixed;">
+        <section id="biblioteczka_top">
+            <h1>Biblioteka</h1>
+
+            <form action="/biblioteka/sortuj" method="post">
+                <label for="sortuj">Sortuj </label>
+                <select name="sortuj" onchange="this.form.submit()">
+                    <% const options = [
+                        { value: 'newest', label: 'od najnowszych' },
+                        { value: 'oldest', label: 'od najstarszych' },
+                        { value: 'highest_rated', label: 'od najwyżej ocenianych' },
+                        { value: 'lowest_rated', label: 'od najniżej ocenianych' },
+                        { value: 'longest', label: 'od najdłuższych notatek' },
+                        { value: 'shortest', label: 'od najkrótszych notatek' },
+                        { value: 'alphabetically_title', label: 'alfabetycznie tytułami' },
+                        { value: 'alphabetically_author', label: 'alfabetycznie autorami' }
+                    ];
+
+                    options.forEach(option => { %>
+                        <option value="<%= option.value %>" <%= sortBy === option.value ? 'selected' : '' %>><%= option.label %></option>
+                    <% }); %>
+                </select>
+            </form>
+
+            <a href="/dodaj_ksiazke">Dodaj książkę</a>
+        </section>
+
+        <section id="biblioteczka">
+            <% if (book_notes.length === 0) { %>
+                <p class="no_books">Nie ma książek, zawsze możesz jakąś dodać...</p>
+            <% } else { %>
+            <% book_notes.forEach((book_note, index) => { %>
+                <div class="card">
+                    <form action="/biblioteka/edytuj_ksiazke" method="post" enctype="multipart/form-data">
+                        <div class="card_top">
+                            <div class="cover">
+                                <img  class="cover_img" src="/images/book_covers/<%= book_note.book_cover_id %>.png" alt="<%= book_note.title %>">
+                                <img src="images/add_book.png" class="addBookImage" style="display: none;">
+                                <input type="file" value="testsets" class="fileInput" name="image" onchange="previewImage(event)" style="display:none; visibility: hidden;">
+                                <img class="cover_edit" src="/images/book_covers/<%= book_note.book_cover_id %>.png" style="display:none">
+                            </div>
+                            <div class="card_content">
+                                <div class="card_title_author">
+                                    <div class="title_box">
+                                        <h2><%= book_note.title %></h2>
+                                        <input class="title" size="40" type="text" name="title" value="<%= book_note.title %>" style="display:none" required>
+                                    </div>
+                                    <div>
+                                        <p class="author"><%= book_note.author %></p>
+                                        <input type="text" size="15.8" name="author" class="author_input" value="<%= book_note.author %>" style="display:none" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="note"><%= book_note.note %></p>
+                                    <textarea class="note note_input" name="note" style="display:none" required><%= book_note.note %></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom_card">
+                            
+                            <div class="bottom_rating_date">
+                                <div class="rating">
+                                    <p><%= book_note.rating %>/10</p>
+                                    <input class="input_rating" type="number" size="2" name="rating" value="<%= book_note.rating %>" style="display:none" min="0" max="10" required><p class="p_rating" style="display:none">/10</p>
+                                </div>
+                                <div class="date">
+                                    <p><%= book_note.readed_date.toLocaleDateString('pl-PL', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) %></p>
+                                    <input class="input_date" type="date" name="readed_date" value="<%= new Date(book_note.readed_date.getTime() + (24*60*60*1000)).toISOString().substr(0,10) %>" style="display:none" required>
+                                </div>
+                            </div>
+
+                            <div class="bottom_card_options">
+                                <button class="edit_submit" id="input_confirm" type="submit" value="Potwierdź" style="display:none"> Potwierdź </button>
+                                <button class="edit_button" type="button">Edytuj</button>
+                                <input class="edit_submit" type="hidden" name="id" value="<%= book_note.book_cover_id %>">
+                            </div>
+                        </div>
+                    </form>
+
+                    <form class="delete_book"action="/biblioteka/usun_ksiazke" method="post">
+                        <input type="hidden" name="id" value="<%= book_note.book_cover_id %>">
+                        <input type="submit" value="Usuń książkę" onclick="return confirm('Czy na pewno chcesz usunąć tą książkę?');">
+                    </form>
+                </div>
+
+                <div class="hr_biblioteczka">
+                    <hr>
+                </div>
+            <% }); %>
+        <% } %>
+        </section>
+
+
+        <a class="delete_account" href="/biblioteka/usun_uzytkownika" onclick="return confirm('Czy na pewno chcesz usunąć tą biblioteczkę i konto użytkownika?');">Usuń użytkownika i Bibliotekę</a>
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $('.addBookImage').click( () => {
+        $(event.currentTarget).closest('form').find('.fileInput').click();
+    });
+
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            $(event.target).closest('form').find('.cover_edit').attr('src', reader.result);
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+
+    $('.edit_button').click( () => {
+        var editButton = $(event.currentTarget);
+        var editSubmit = editButton.siblings('.edit_submit');
+        
+        editButton.animate({opacity: 0}, 200, function() {
+        editSubmit.fadeToggle();
+            $(this).text(function(i, text){
+                return text === "Edytuj" ? "Anuluj" : "Edytuj";
+            }).animate({opacity: 1}, 200);
+        });
+
+        var form = editButton.closest('form');
+
+        if (editButton.text() == "Edytuj") {
+            form.find('input, textarea, h2, p, .cover_edit, .addBookImage').not('.edit_submit').fadeToggle("slow");
+        } else {
+            form.find('input, textarea, h2, p, .cover_edit, .addBookImage').not('.edit_submit').fadeToggle("slow");
+        }
+    });
+</script>
+
+
+<%- include("partials/footer.ejs") %>

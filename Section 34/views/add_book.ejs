@@ -1,0 +1,51 @@
+<%- include("partials/header.ejs") %>
+
+<div class="add_book_container">
+        <img src="images/Vector 4.png" id="vector4" alt="vector" style="position:fixed;">
+
+<form class="form_add_book" action="/dodaj_ksiazke" method="post" enctype="multipart/form-data">
+    <div class="add_book_left">
+        <input type="file" name="image" onchange="previewImage(event)" style="display:none; visibility: hidden;" required>
+        <div id="imagePreview"></div>
+        <input type="submit" value="Opublikuj">
+
+    </div>
+    <div class="add_book_right">
+        <div class="ab_title_author">
+            <input type="text" name="title" placeholder="Tytuł" required>
+            <input type="text" name="author" placeholder="Autor" required>
+        </div>
+        <div class="ab_note">
+            <textarea name="note" placeholder="Notatka" autocomplete="off" required></textarea>
+        </div>
+
+        <div class="ab_rating_date">
+            <span><label for="rating">Ocena: </label><input type="number" name="rating" min="0" max="10" required>/10</span>
+            <span><label for="readed_date">Data przeczytania:</label>
+            <input type="date" id="readed_date" name="readed_date"/></span>
+        </div>
+    </div>
+</form>
+
+
+</div>
+
+<script>
+document.getElementById('imagePreview').addEventListener('click', function() {
+    document.querySelector('input[type="file"]').click();
+})
+
+function previewImage(event) {
+    var reader = new FileReader();
+    reader.onload = function() {
+        var output = document.getElementById('imagePreview');
+        output.innerHTML = '<img src="' + reader.result + '" style="max-width: 300px;">';
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
+
+document.getElementById('readed_date').valueAsDate = new Date();
+</script>
+
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,55 @@
+nav {
+    padding-right:150px;
+    margin-top: 50px;
+}
+
+nav ul form {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:90vw;
+    display:flex;
+    gap:40px;
+    justify-content: end;
+    align-items: center;
+}
+
+nav li input{
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    color: #000000;
+    background-color: transparent;
+    border:0;
+    cursor:pointer;
+}
+
+nav li::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: linear-gradient(135deg, #EA805D 0%, #E8614F 100%);
+  border-radius: 50px;
+  transition: 400ms;
+}
+
+nav li:not(:last-child):hover::after {
+  width: 100%;
+}
+
+#add_img {  
+    display:flex;
+    height: 30px;
+    padding:7px 15px;
+    cursor:pointer;
+    background: linear-gradient(135deg, #EA805D 0%, #E8614F 100%);
+    border-radius: 35px;
+    border: 0;
+    transition: padding 0.4s;
+}
+
+#add_img:hover {
+    padding:7px 20px;
+}

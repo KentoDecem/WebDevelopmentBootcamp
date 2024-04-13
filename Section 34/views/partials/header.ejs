@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<nav>
+    <ul>
+        <form action="/user" method="post">
+            <% users.forEach((user) => { %>
+                <li>
+                    <input type="submit" name="user" value="<%= user.name %>">
+                </li>
+            <% }); %>
+
+            <li>
+                <img src="images/add.png" id="add_img" alt="add">
+                <input type="submit" name="add_user" value="Dodaj" style="display: none;">
+                <script>
+                    // add the logic that when addimg is clicked, the input add should be submit
+                    document.getElementById("add_img").addEventListener("click", function() {
+                        document.querySelector("input[name='add_user']").click();
+                    });
+                </script>
+            </li>
+        </form>
+    </ul>
+</nav>
