@@ -236,6 +236,12 @@ Thanks to this, I deepened my knowledge of databases and server logic.
 
 
 
+## Section 35: Authentication and Security
+I learned how to add the functionality of creating accounts on the website.<br>
+I understood what makes a database safe from hacker attacks.<br>
+Now I also know how to add the ability to log in using a Google account.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
