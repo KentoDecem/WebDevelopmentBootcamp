@@ -242,6 +242,10 @@ I understood what makes a database safe from hacker attacks.<br>
 Now I also know how to add the ability to log in using a Google account.
 
 
+## Section 36: React.js
+Over the last few days, I have delved into the world of React.<br>I understood the concepts:<br>Components, Modules, Props, Hooks.<br>This is a large dose of new knowledge.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
