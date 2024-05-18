@@ -246,6 +246,10 @@ Now I also know how to add the ability to log in using a Google account.
 Over the last few days, I have delved into the world of React.<br>I understood the concepts:<br>Components, Modules, Props, Hooks.<br>This is a large dose of new knowledge.
 
 
+## Section 37: Intro to Web3<br>
+I understood the concept of web3, blockchain and what Internet Computer is.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
