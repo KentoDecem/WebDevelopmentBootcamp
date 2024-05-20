@@ -260,6 +260,10 @@ Hey, today I understood the basics of the motoko language.<br>I managed to conne
 Now I know how to host a website on the internet using ICP cycles.
 
 
+## Section 40: Building DApps on ICP with a React Frontend
+Now our keeper app is truly durable. I learned how to combine the power of react with hosting a website on the icp live blockchain.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
