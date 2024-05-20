@@ -256,7 +256,7 @@ Hey, today I understood the basics of the motoko language.<br>I managed to conne
 
 
 
-## Deploying to the ICP Live Blockchain
+## Section 39: Deploying to the ICP Live Blockchain
 Now I know how to host a website on the internet using ICP cycles.
 
 
