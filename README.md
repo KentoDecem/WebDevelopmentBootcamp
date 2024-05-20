@@ -250,6 +250,10 @@ Over the last few days, I have delved into the world of React.<br>I understood t
 I understood the concept of web3, blockchain and what Internet Computer is.
 
 
+## Section 38: Motoko Language<br>
+Hey, today I understood the basics of the motoko language.<br>I managed to connect the front-end to the backend, creating a simple bank simulation.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
