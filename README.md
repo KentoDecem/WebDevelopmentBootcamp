@@ -256,6 +256,10 @@ Hey, today I understood the basics of the motoko language.<br>I managed to conne
 
 
 
+## Deploying to the ICP Live Blockchain
+Now I know how to host a website on the internet using ICP cycles.
+
+
 ## Contributing
 Are you ready to embark on this web development journey together? Your contributions are more than welcome! Whether you have fresh project ideas or want to improve existing ones, join me on this coding quest. Let's write the future of web development! 💡
 
